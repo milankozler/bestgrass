@@ -1,0 +1,1515 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>BestGrass | Renovace trávníku, automatická závlaha a půjčovna strojů, Podbořany</title>
+<meta name="description" content="Regenerace trávníků (aerifikace, topdressing, dosev, hnojení), automatická závlaha Hunter Hydrawise a půjčovna strojů pro trávník. Podbořany, Žatec, Louny, Chomutov, Most. Ceny včetně DPH.">
+<meta property="og:title" content="BestGrass | Renovace trávníku, automatická závlaha a půjčovna strojů, Podbořany">
+<meta property="og:description" content="Regenerace trávníků (aerifikace, topdressing, dosev, hnojení), automatická závlaha Hunter Hydrawise a půjčovna strojů pro trávník. Podbořany, Žatec, Louny, Chomutov, Most. Ceny včetně DPH.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="cs_CZ">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>:root{color-scheme:light}img{max-width:100%}[hidden]{display:none!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+/* Layout: left-aligned 1180px grid. Hero split text/photo with the photo bleeding right.
+   Sections sit on paper; the rental section is set on sand (topdressing material),
+   the smart-garden section on night (garden lighting). Three service colours:
+   turf green, water blue, sand. */
+:root{
+  --paper:#F5F7F1; --card:#FFFFFF; --ink:#152619; --ink-2:#4B5A4F; --ink-3:#7A877E;
+  --line:#D8DED3; --line-2:#C5CEC2;
+  --turf:#1E7A3E; --turf-deep:#145A2D; --turf-tint:#E3F0E6; --turf-fg:#FFFFFF;
+  --water:#2A6C99; --water-tint:#E2EDF5;
+  --sand:#EEE5CE; --sand-deep:#7E6433; --sand-tint:#F8F3E7; --sand-line:#DACDAE;
+  --night:#0F1A14; --night-2:#172620; --night-fg:#E9EFEA; --night-fg-2:#A9B8AE; --night-line:#28382F; --lamp:#F0C169;
+  --ok:#1E7A3E; --err:#B23A2E;
+  --font-display:"Bricolage Grotesque", "Instrument Sans", "Segoe UI", Arial, sans-serif;
+  --font-body:"Instrument Sans", "Segoe UI", Arial, Helvetica, sans-serif;
+  --radius:6px; --shadow:0 18px 40px -24px rgba(21,38,25,.35);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0F1512; --card:#172019; --ink:#E8EEE9; --ink-2:#AAB6AD; --ink-3:#7F8B82;
+    --line:#26312A; --line-2:#334038;
+    --turf:#3FA463; --turf-deep:#7AD39A; --turf-tint:#17281D; --turf-fg:#0B1A10;
+    --water:#6CAEDC; --water-tint:#14283A;
+    --sand:#2B2518; --sand-deep:#DCBC77; --sand-tint:#1F1B12; --sand-line:#4A3F27;
+    --night:#0A100C; --night-2:#121B15; --night-line:#243029;
+    --shadow:0 18px 40px -24px rgba(0,0,0,.7);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0F1512; --card:#172019; --ink:#E8EEE9; --ink-2:#AAB6AD; --ink-3:#7F8B82;
+  --line:#26312A; --line-2:#334038;
+  --turf:#3FA463; --turf-deep:#7AD39A; --turf-tint:#17281D; --turf-fg:#0B1A10;
+  --water:#6CAEDC; --water-tint:#14283A;
+  --sand:#2B2518; --sand-deep:#DCBC77; --sand-tint:#1F1B12; --sand-line:#4A3F27;
+  --night:#0A100C; --night-2:#121B15; --night-line:#243029;
+  --shadow:0 18px 40px -24px rgba(0,0,0,.7);
+  color-scheme:dark;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth; scroll-padding-top:84px}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} *{transition:none!important; animation:none!important} }
+body{margin:0; background:var(--paper); color:var(--ink); font-family:var(--font-body); font-size:17px; line-height:1.55; -webkit-font-smoothing:antialiased}
+img{max-width:100%; height:auto; display:block}
+a{color:inherit}
+h1,h2,h3,h4{font-family:var(--font-display); margin:0; text-wrap:balance; line-height:1.08; letter-spacing:-.015em}
+h1{font-size:clamp(2.35rem, 5.2vw, 4.1rem); font-weight:700}
+h2{font-size:clamp(1.85rem, 3.4vw, 2.7rem); font-weight:700}
+h3{font-size:1.2rem; font-weight:650; line-height:1.25}
+p{margin:0}
+.lead{font-size:clamp(1.08rem, 1.6vw, 1.25rem); color:var(--ink-2); max-width:62ch; line-height:1.5}
+.wrap{max-width:1180px; margin-inline:auto; padding-inline:clamp(16px, 4vw, 40px)}
+.section{padding-block:clamp(60px, 8vw, 108px)}
+.section-head{display:grid; gap:14px; max-width:760px; margin-bottom:clamp(32px, 5vw, 56px)}
+.section-head .lead{max-width:none}
+.tabular{font-variant-numeric:tabular-nums}
+:focus-visible{outline:3px solid var(--turf); outline-offset:3px; border-radius:3px}
+small{font-size:.85em; color:var(--ink-2)}
+
+/* buttons */
+.btn{display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:13px 20px; border-radius:var(--radius); font:600 1rem var(--font-body); text-decoration:none; cursor:pointer; border:1.5px solid transparent; transition:background .15s, color .15s, border-color .15s; white-space:nowrap}
+.btn-primary{background:var(--turf); color:var(--turf-fg); border-color:var(--turf)}
+.btn-primary:hover{background:var(--turf-deep); border-color:var(--turf-deep)}
+.btn-secondary{background:transparent; color:var(--ink); border-color:var(--line-2)}
+.btn-secondary:hover{border-color:var(--ink)}
+.btn-ghost{background:transparent; color:var(--turf); border-color:var(--turf); padding:10px 16px; font-size:.95rem}
+.btn-ghost:hover{background:var(--turf); color:var(--turf-fg)}
+.btn-water{background:var(--water); color:#fff; border-color:var(--water)}
+.btn-water:hover{filter:brightness(.92)}
+.btn-sand{background:var(--sand-deep); color:#fff; border-color:var(--sand-deep)}
+.btn-sand:hover{filter:brightness(.92)}
+.btn[disabled]{opacity:.6; cursor:default}
+
+/* header */
+.site-header{position:sticky; top:env(safe-area-inset-top, 0px); z-index:50; background:color-mix(in srgb, var(--paper) 88%, transparent); backdrop-filter:saturate(1.4) blur(12px); border-bottom:1px solid var(--line)}
+.site-header .wrap{display:flex; align-items:center; gap:28px; min-height:70px}
+.brand{display:flex; align-items:center; gap:10px; text-decoration:none; font-family:var(--font-display); font-weight:800; font-size:1.45rem; letter-spacing:-.02em; line-height:1}
+.brand-mark{width:30px; height:30px; flex:none}
+.brand small{display:block; font:500 .72rem var(--font-body); color:var(--ink-2); letter-spacing:.01em; margin-top:3px; white-space:nowrap}
+@media (max-width: 480px){ .brand small{display:none} }
+.nav{display:flex; gap:4px; margin-left:auto; align-items:center}
+.nav a{padding:8px 11px; text-decoration:none; font-weight:500; font-size:.95rem; color:var(--ink-2); border-radius:4px; white-space:nowrap}
+.nav a.btn-primary{color:var(--turf-fg); background:var(--turf); padding:11px 18px}
+.nav a.btn-primary:hover{color:var(--turf-fg); background:var(--turf-deep)}
+.nav a:hover{color:var(--ink); background:var(--turf-tint)}
+.nav .btn{margin-left:10px}
+.nav-toggle{display:none; margin-left:auto; background:none; border:1.5px solid var(--line-2); border-radius:var(--radius); padding:9px 12px; font:600 .95rem var(--font-body); color:var(--ink); cursor:pointer}
+@media (max-width: 980px){
+  .nav{display:none; position:absolute; left:0; right:0; top:100%; flex-direction:column; align-items:stretch; background:var(--card); border-bottom:1px solid var(--line); padding:12px clamp(16px,4vw,40px) 18px; gap:2px; box-shadow:var(--shadow)}
+  .nav.open{display:flex}
+  .nav a{padding:12px 10px; font-size:1.05rem}
+  .nav .btn{margin:10px 0 0}
+  .nav-toggle{display:inline-block}
+}
+
+/* hero */
+.hero{overflow:hidden}
+.hero .wrap{display:grid; grid-template-columns:minmax(0,1.05fr) minmax(0,1fr); gap:clamp(28px,5vw,64px); align-items:center; padding-block:clamp(40px,6vw,84px)}
+.hero-copy{display:grid; gap:24px}
+.hero-copy .lead{max-width:56ch}
+.hero-actions{display:flex; flex-wrap:wrap; gap:12px; align-items:center}
+.hero-phone{display:flex; gap:10px; align-items:baseline; color:var(--ink-2); font-size:.95rem; flex-wrap:wrap}
+.hero-phone strong{color:var(--ink); font-family:var(--font-display); font-size:1.15rem; font-weight:600; letter-spacing:.01em}
+.hero-photo{position:relative; margin-right:calc(-1 * clamp(16px, 4vw, 40px))}
+.hero-photo img{width:100%; height:clamp(320px, 46vw, 600px); object-fit:cover; object-position:50% 45%; border-radius:var(--radius) 0 0 var(--radius)}
+.hero-photo figcaption{position:absolute; left:14px; bottom:14px; background:color-mix(in srgb, var(--card) 92%, transparent); color:var(--ink); padding:8px 12px; border-radius:4px; font-size:.85rem; font-weight:500; box-shadow:var(--shadow)}
+@media (max-width: 860px){
+  .hero .wrap{grid-template-columns:1fr}
+  .hero-photo{margin-inline:calc(-1 * clamp(16px, 4vw, 40px)); order:-1}
+  .hero-photo img{height:clamp(240px, 56vw, 420px); border-radius:0}
+}
+.facts{border-top:1px solid var(--line); border-bottom:1px solid var(--line); background:var(--card)}
+.facts .wrap{display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:0}
+.fact{padding:20px 22px 20px 0; display:grid; gap:4px; border-left:1px solid var(--line); padding-left:22px}
+.fact:first-child{border-left:0; padding-left:0}
+.fact strong{font-family:var(--font-display); font-size:1.08rem; font-weight:650; line-height:1.2}
+.fact span{color:var(--ink-2); font-size:.92rem; line-height:1.4}
+@media (max-width: 860px){
+  .facts .wrap{grid-template-columns:1fr 1fr}
+  .fact{border-left:0; padding-left:0; border-top:1px solid var(--line)}
+  .fact:nth-child(-n+2){border-top:0}
+}
+@media (max-width: 480px){ .facts .wrap{grid-template-columns:1fr} .fact:nth-child(2){border-top:1px solid var(--line)} }
+
+/* services list */
+.svc-grid{display:grid; grid-template-columns:minmax(0,1.3fr) minmax(0,1fr); gap:clamp(28px,5vw,64px); align-items:start}
+.svc-list{display:grid; border-top:1px solid var(--line)}
+.svc{display:grid; grid-template-columns:minmax(0,1fr) auto; gap:6px 24px; padding:18px 0; border-bottom:1px solid var(--line); align-items:baseline}
+.svc h3{font-size:1.1rem; font-weight:650}
+.svc p{grid-column:1; color:var(--ink-2); font-size:.95rem; max-width:56ch}
+.svc .price{grid-column:2; grid-row:1 / span 2; text-align:right; font-family:var(--font-display); font-weight:650; font-size:1.05rem; white-space:nowrap; color:var(--turf-deep)}
+.svc .price small{display:block; font:400 .8rem var(--font-body); color:var(--ink-2); white-space:normal; max-width:14ch; margin-left:auto}
+@media (max-width: 560px){ .svc{grid-template-columns:1fr} .svc .price{grid-column:1; grid-row:auto; text-align:left} .svc .price small{margin-left:0; max-width:none} }
+.svc-aside{display:grid; grid-template-columns:minmax(0,1fr); gap:22px; position:sticky; top:96px; min-width:0}
+.svc-aside img{border-radius:var(--radius); width:100%; aspect-ratio:4/3; object-fit:cover}
+.note{background:var(--turf-tint); border-left:3px solid var(--turf); padding:14px 16px; border-radius:0 var(--radius) var(--radius) 0; font-size:.95rem; color:var(--ink)}
+.note strong{font-family:var(--font-display)}
+@media (max-width: 860px){ .svc-grid{grid-template-columns:1fr} .svc-aside{position:static} }
+
+/* process steps (a real sequence) */
+.steps{display:grid; grid-template-columns:repeat(5, minmax(0,1fr)); gap:18px; counter-reset:step; margin-top:clamp(40px,6vw,64px)}
+.step{counter-increment:step; display:grid; gap:8px; padding-top:16px; border-top:2px solid var(--line-2); position:relative}
+.step::before{content:counter(step); font-family:var(--font-display); font-weight:700; font-size:.9rem; color:var(--turf); position:absolute; top:-13px; left:0; background:var(--paper); padding-right:8px}
+.step h3{font-size:1.05rem}
+.step p{color:var(--ink-2); font-size:.93rem}
+.steps.four{grid-template-columns:repeat(4, minmax(0,1fr))}
+.steps.three{grid-template-columns:repeat(3, minmax(0,1fr))}
+.steps.water .step::before{color:var(--water)}
+.steps.sand .step::before{color:var(--sand-deep); background:var(--sand-tint)}
+@media (max-width: 900px){ .steps, .steps.four{grid-template-columns:repeat(2, minmax(0,1fr))} }
+@media (max-width: 520px){ .steps, .steps.four, .steps.three{grid-template-columns:1fr} }
+
+/* season calendar */
+.season{margin-top:clamp(40px,6vw,64px); display:grid; gap:14px}
+.season-head{display:flex; justify-content:space-between; align-items:baseline; gap:16px; flex-wrap:wrap}
+.season-head p{color:var(--ink-2); font-size:.92rem}
+.season-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch}
+.season-grid{display:grid; grid-template-columns:minmax(150px, 190px) repeat(9, minmax(52px,1fr)); min-width:640px; border:1px solid var(--line); border-radius:var(--radius); background:var(--card); overflow:hidden}
+.season-grid > div{padding:10px 8px; border-bottom:1px solid var(--line); font-size:.9rem; display:flex; align-items:center}
+.season-grid .m{justify-content:center; font-family:var(--font-display); font-weight:600; color:var(--ink-2); background:var(--paper)}
+.season-grid .m.on{color:var(--ink)}
+.season-grid .l{font-weight:500; padding-left:14px}
+.season-grid .c{justify-content:center}
+.season-grid .c i{width:14px; height:14px; border-radius:50%; background:var(--turf); display:block}
+.season-grid .c i.half{background:transparent; border:2px solid var(--turf)}
+.season-grid .c i.w{background:var(--water)}
+.season-grid > div:nth-last-child(-n+10){border-bottom:0}
+.season-legend{display:flex; gap:18px; flex-wrap:wrap; color:var(--ink-2); font-size:.88rem}
+.season-legend i{display:inline-block; width:12px; height:12px; border-radius:50%; vertical-align:-1px; margin-right:6px; background:var(--turf)}
+.season-legend i.half{background:transparent; border:2px solid var(--turf)}
+.season-legend i.w{background:var(--water)}
+
+/* forms */
+.hp{position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden}
+.form-block{margin-top:clamp(40px,6vw,64px); background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:clamp(20px,3.5vw,40px); box-shadow:var(--shadow)}
+.form-block.water{border-top:4px solid var(--water)}
+.form-block.turf{border-top:4px solid var(--turf)}
+.form-block.sand{border-top:4px solid var(--sand-deep)}
+.form-head{display:grid; gap:8px; margin-bottom:24px; max-width:60ch}
+.form-head p{color:var(--ink-2)}
+.form{display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:18px 20px}
+.form .full{grid-column:1 / -1}
+.field{display:grid; gap:6px; min-width:0}
+.field label, .field .lbl{font-weight:600; font-size:.92rem}
+.field label span, .field .lbl span{font-weight:400; color:var(--ink-3)}
+.field input:not([type=checkbox]):not([type=radio]):not([type=file]), .field select, .field textarea{width:100%; font:inherit; font-size:1rem; padding:11px 12px; border:1.5px solid var(--line-2); border-radius:var(--radius); background:var(--paper); color:var(--ink); min-width:0}
+.field input:focus, .field select:focus, .field textarea:focus{outline:none; border-color:var(--turf); box-shadow:0 0 0 3px color-mix(in srgb, var(--turf) 22%, transparent)}
+.field textarea{min-height:110px; resize:vertical}
+.chips{display:flex; flex-wrap:wrap; gap:8px}
+.chip{position:relative}
+.chip input{position:absolute; inset:0; opacity:0; width:100%; height:100%; margin:0; cursor:pointer}
+.chip span{display:inline-block; padding:8px 13px; border:1.5px solid var(--line-2); border-radius:999px; font-size:.92rem; background:var(--paper); cursor:pointer; user-select:none}
+.chip input:checked + span{background:var(--turf); color:var(--turf-fg); border-color:var(--turf)}
+.chip input:focus-visible + span{outline:3px solid var(--turf); outline-offset:2px}
+.radios{display:flex; flex-wrap:wrap; gap:8px 18px}
+.radios label{display:inline-flex; gap:8px; align-items:center; font-weight:400; font-size:.98rem; cursor:pointer}
+.radios input{width:18px; height:18px; accent-color:var(--turf); margin:0}
+.check{display:flex; gap:10px; align-items:flex-start; font-size:.92rem; color:var(--ink-2)}
+.check input{width:18px; height:18px; accent-color:var(--turf); margin:2px 0 0; flex:none}
+.file{border:1.5px dashed var(--line-2); border-radius:var(--radius); padding:14px; background:var(--paper); display:grid; gap:10px}
+.file input{font-size:.92rem}
+.file-hint{font-size:.86rem; color:var(--ink-2)}
+.thumbs{display:flex; gap:8px; flex-wrap:wrap}
+.thumbs img{width:72px; height:72px; object-fit:cover; border-radius:4px; border:1px solid var(--line)}
+.form-foot{grid-column:1/-1; display:flex; gap:16px; align-items:center; flex-wrap:wrap; justify-content:space-between; margin-top:6px}
+.form-foot p{color:var(--ink-2); font-size:.9rem}
+.form-msg{grid-column:1/-1; font-size:.95rem; padding:12px 14px; border-radius:var(--radius)}
+.form-msg.err{background:color-mix(in srgb, var(--err) 12%, var(--card)); color:var(--err)}
+.success{display:grid; gap:12px; padding:8px 0}
+.success h3{font-size:1.5rem}
+.success p{color:var(--ink-2); max-width:60ch}
+.success .btn{justify-self:start; margin-top:6px}
+.estimate{grid-column:1/-1; background:var(--sand-tint); border:1px solid var(--sand-line); border-radius:var(--radius); padding:14px 16px; display:grid; gap:4px; font-size:.95rem}
+.estimate strong{font-family:var(--font-display); font-size:1.25rem; color:var(--sand-deep)}
+@media (max-width: 640px){ .form{grid-template-columns:1fr} }
+
+/* irrigation */
+.section.water-bg{background:var(--card); border-top:1px solid var(--line); border-bottom:1px solid var(--line)}
+.two-col{display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:clamp(28px,5vw,64px); align-items:center}
+.two-col img{border-radius:var(--radius); width:100%; aspect-ratio:4/3; object-fit:cover}
+.points{display:grid; gap:16px; list-style:none; padding:0; margin:0}
+.points li{display:grid; grid-template-columns:auto 1fr; gap:14px; align-items:start}
+.points li svg{width:26px; height:26px; flex:none; margin-top:2px}
+.points li strong{display:block; font-family:var(--font-display); font-weight:650; font-size:1.05rem; margin-bottom:2px}
+.points li span{color:var(--ink-2); font-size:.95rem}
+.checklist{background:var(--water-tint); border-radius:var(--radius); padding:20px 22px; display:grid; gap:10px}
+.checklist h3{font-size:1.05rem}
+.checklist ul{margin:0; padding-left:0; list-style:none; display:grid; gap:8px; font-size:.95rem}
+.checklist li{display:grid; grid-template-columns:auto 1fr; gap:10px; align-items:start}
+.checklist li::before{content:""; width:9px; height:9px; border-radius:50%; background:var(--water); margin-top:8px}
+.photo-pair{display:grid; grid-template-columns:minmax(0,1fr); gap:14px}
+.photo-pair img{border-radius:var(--radius); width:100%; aspect-ratio:4/3; object-fit:cover}
+.photo-pair img + img{aspect-ratio:16/7}
+@media (max-width: 860px){ .two-col{grid-template-columns:1fr} }
+
+/* rental */
+.section.sand-bg{background:var(--sand-tint); border-top:1px solid var(--sand-line); border-bottom:1px solid var(--sand-line)}
+.rent-intro{display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr); gap:clamp(28px,5vw,64px); align-items:center; margin-bottom:clamp(32px,5vw,56px)}
+.rent-intro img{border-radius:var(--radius); width:100%; aspect-ratio:4/3; object-fit:cover}
+.rules{display:grid; gap:10px; list-style:none; padding:0; margin:0; font-size:.95rem}
+.rules li{display:grid; grid-template-columns:auto 1fr; gap:10px; align-items:start; color:var(--ink-2)}
+.rules li::before{content:""; width:9px; height:9px; border-radius:50%; background:var(--sand-deep); margin-top:8px}
+.rules li strong{color:var(--ink)}
+@media (max-width: 860px){ .rent-intro{grid-template-columns:1fr} }
+.filters{display:flex; gap:8px; flex-wrap:wrap; margin-bottom:22px}
+.filters button{font:600 .92rem var(--font-body); padding:8px 14px; border-radius:999px; border:1.5px solid var(--sand-line); background:var(--card); color:var(--ink); cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--sand-deep); color:#fff; border-color:var(--sand-deep)}
+.rc-grid{display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:16px}
+.rc{background:var(--card); border:1px solid var(--sand-line); border-radius:var(--radius); display:grid; grid-template-columns:minmax(0,1fr); grid-template-rows:auto 1fr; overflow:hidden; min-width:0}
+.rc[hidden]{display:none}
+.rc-img{background:#fff; aspect-ratio:4/3; display:grid; place-items:center; padding:12px; border-bottom:1px solid var(--sand-line); min-width:0; overflow:hidden}
+.rc-img img{width:100%; height:100%; object-fit:contain}
+.rc-body{padding:14px 16px 16px; display:grid; gap:6px; align-content:start; min-width:0}
+.rc-body h3{font-size:1.02rem}
+.rc-body p{font-size:.88rem; color:var(--ink-2); min-height:2.6em}
+.rc-price{display:flex; gap:6px; align-items:baseline; margin-top:4px}
+.rc-price strong{font-family:var(--font-display); font-size:1.35rem; font-weight:700; font-variant-numeric:tabular-nums}
+.rc-price span{color:var(--ink-2); font-size:.88rem}
+.rc-meta{display:grid; gap:2px; font-size:.85rem; color:var(--ink-2); font-variant-numeric:tabular-nums}
+.rc-btn{margin-top:10px; justify-self:start; color:var(--sand-deep); border-color:var(--sand-deep)}
+.rc-btn:hover{background:var(--sand-deep); color:#fff}
+@media (max-width: 1000px){ .rc-grid{grid-template-columns:repeat(3, minmax(0,1fr))} }
+@media (max-width: 700px){ .rc-grid{grid-template-columns:repeat(2, minmax(0,1fr))} .rc-body{padding:12px} }
+@media (max-width: 340px){ .rc-grid{grid-template-columns:1fr} }
+
+/* smart garden (night) */
+.section.night-bg{background:var(--night); color:var(--night-fg)}
+.night-bg .lead{color:var(--night-fg-2)}
+.night-bg h2, .night-bg h3{color:var(--night-fg)}
+.smart-grid{display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:clamp(28px,5vw,64px); align-items:start}
+.smart-photo{display:grid; grid-template-columns:minmax(0,1fr); gap:14px; min-width:0}
+.smart-photo img{width:100%; border-radius:var(--radius); object-fit:cover}
+.smart-photo .main{aspect-ratio:16/9}
+.smart-photo .pair{display:grid; grid-template-columns:1fr 1fr; gap:14px}
+.smart-photo .pair img{aspect-ratio:4/3}
+.uses{display:grid; gap:0; list-style:none; padding:0; margin:0; border-top:1px solid var(--night-line)}
+.uses li{display:grid; grid-template-columns:auto 1fr; gap:16px; padding:16px 0; border-bottom:1px solid var(--night-line); align-items:start}
+.uses li svg{width:28px; height:28px; color:var(--lamp); margin-top:2px}
+.uses li strong{display:block; font-family:var(--font-display); font-weight:650; font-size:1.05rem; margin-bottom:3px}
+.uses li span{color:var(--night-fg-2); font-size:.95rem}
+.night-cta{display:flex; gap:14px; flex-wrap:wrap; align-items:center; margin-top:28px}
+.btn-lamp{background:var(--lamp); color:#1C1403; border-color:var(--lamp)}
+.btn-lamp:hover{filter:brightness(1.07)}
+.btn-night-ghost{background:transparent; color:var(--night-fg); border-color:var(--night-line)}
+.btn-night-ghost:hover{border-color:var(--night-fg)}
+.brands{display:flex; flex-wrap:wrap; gap:10px 26px; margin-top:28px; padding-top:22px; border-top:1px solid var(--night-line); font-family:var(--font-display); font-weight:700; font-size:1.05rem; color:var(--night-fg-2); letter-spacing:.01em}
+@media (max-width: 860px){ .smart-grid{grid-template-columns:1fr} }
+
+/* references */
+.ref-grid{display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:18px}
+.ref{margin:0; background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:22px; display:grid; gap:16px; align-content:space-between}
+.ref blockquote{margin:0; font-size:1rem; line-height:1.55}
+.ref figcaption{display:flex; gap:12px; align-items:center; font-size:.9rem; color:var(--ink-2)}
+.ref figcaption strong{color:var(--ink)}
+.ref-ini{width:40px; height:40px; border-radius:50%; background:var(--turf-tint); color:var(--turf-deep); display:grid; place-items:center; font-family:var(--font-display); font-weight:700; flex:none}
+@media (max-width: 900px){ .ref-grid{grid-template-columns:repeat(2, minmax(0,1fr))} }
+@media (max-width: 560px){ .ref-grid{grid-template-columns:1fr} }
+
+/* gallery */
+.gal{display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); grid-auto-rows:220px; grid-auto-flow:dense; gap:12px}
+.gal-item{margin:0; position:relative; overflow:hidden; border-radius:var(--radius); background:var(--card)}
+.gal-item img{width:100%; height:100%; object-fit:cover}
+.gal-item.wide{grid-column:span 2}
+.gal-item.tall{grid-row:span 2}
+.gal-item figcaption{position:absolute; left:0; right:0; bottom:0; padding:28px 12px 10px; font-size:.82rem; color:#fff; background:linear-gradient(to top, rgba(10,20,12,.78), rgba(10,20,12,0)); line-height:1.3}
+@media (max-width: 900px){ .gal{grid-template-columns:repeat(3, minmax(0,1fr)); grid-auto-rows:180px} }
+@media (max-width: 600px){ .gal{grid-template-columns:repeat(2, minmax(0,1fr)); grid-auto-rows:150px} .gal-item.wide{grid-column:span 2} }
+
+/* pricing */
+.price-grid{display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:clamp(24px,4vw,40px)}
+.price-card{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:clamp(18px,3vw,28px); display:grid; gap:14px; align-content:start; min-width:0}
+.price-card h3{font-size:1.25rem}
+.price-card p{color:var(--ink-2); font-size:.93rem}
+.price-card .inc{font-size:.9rem; color:var(--ink-2); padding-top:10px; border-top:1px dashed var(--line)}
+.bands{width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; font-size:.95rem}
+.bands th{text-align:left; font-weight:600; font-size:.82rem; color:var(--ink-3); padding:0 0 8px; border-bottom:1px solid var(--line)}
+.bands th:last-child, .bands td:last-child{text-align:right; white-space:nowrap}
+.bands td{padding:8px 0; border-bottom:1px solid var(--line)}
+.bands tr:last-child td{border-bottom:0}
+.bands td small{display:block; color:var(--ink-3); font-size:.8rem}
+.bands td:last-child{font-weight:600; font-family:var(--font-display)}
+.price-note{margin-top:24px; color:var(--ink-2); font-size:.93rem; max-width:80ch}
+@media (max-width: 760px){ .price-grid{grid-template-columns:1fr} }
+
+/* contact */
+.contact-grid{display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); gap:clamp(28px,5vw,64px); align-items:start}
+.contact-card{display:grid; gap:22px}
+.contact-row{display:grid; gap:4px; padding-bottom:18px; border-bottom:1px solid var(--line)}
+.contact-row .k{font-size:.82rem; color:var(--ink-3); font-weight:600}
+.contact-row .v{font-family:var(--font-display); font-size:1.3rem; font-weight:650; display:flex; gap:10px; align-items:center; flex-wrap:wrap}
+.contact-row .v a{text-decoration:none}
+.contact-row .v a:hover{text-decoration:underline}
+.copy{font:500 .78rem var(--font-body); border:1px solid var(--line-2); background:var(--card); color:var(--ink-2); border-radius:999px; padding:4px 10px; cursor:pointer}
+.copy:hover{border-color:var(--ink); color:var(--ink)}
+.contact-row p{color:var(--ink-2); font-size:.95rem}
+.towns{display:flex; flex-wrap:wrap; gap:8px}
+.towns span{padding:6px 12px; border:1px solid var(--line-2); border-radius:999px; font-size:.9rem; background:var(--card)}
+.contact-form{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:clamp(20px,3.5vw,36px); box-shadow:var(--shadow)}
+@media (max-width: 860px){ .contact-grid{grid-template-columns:1fr} }
+
+/* hub (rozcestník) */
+.hub{padding-block:clamp(32px,5vw,56px) 0}
+.hub .wrap{display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:16px}
+.hub-card{display:grid; grid-template-columns:96px minmax(0,1fr); gap:16px; align-items:center; padding:14px; background:var(--card); border:1px solid var(--line); border-radius:var(--radius); text-decoration:none; color:var(--ink); transition:border-color .15s}
+.hub-card:hover{border-color:var(--ink-3)}
+.hub-card img{width:96px; height:96px; object-fit:cover; border-radius:4px}
+.hub-card strong{display:block; font-family:var(--font-display); font-size:1.1rem; font-weight:650; margin-bottom:3px}
+.hub-card span{display:block; color:var(--ink-2); font-size:.9rem; line-height:1.4}
+.hub-card em{display:block; font-style:normal; font-weight:600; font-size:.88rem; margin-top:6px}
+.hub-card.turf em{color:var(--turf-deep)} .hub-card.water em{color:var(--water)} .hub-card.sand em{color:var(--sand-deep)}
+@media (max-width: 900px){ .hub .wrap{grid-template-columns:1fr} }
+
+/* rental picker */
+.picker{display:grid; gap:10px}
+.picked{display:flex; flex-wrap:wrap; gap:8px; min-height:10px}
+.picked:empty::before{content:"Zatím nic nevybráno. Použijte tlačítko Rezervovat u stroje nebo výběr níže."; color:var(--ink-3); font-size:.9rem}
+.pick{display:inline-flex; align-items:center; gap:8px; padding:7px 8px 7px 12px; border-radius:999px; background:var(--sand-tint); border:1px solid var(--sand-line); font-size:.92rem; font-weight:500}
+.pick button{border:0; background:var(--sand-line); color:var(--ink); width:22px; height:22px; border-radius:50%; cursor:pointer; font:600 .9rem var(--font-body); line-height:1; display:grid; place-items:center}
+.pick button:hover{background:var(--sand-deep); color:#fff}
+.rc-btn.added{background:var(--sand-deep); color:#fff}
+.est-rows{display:grid; gap:2px; font-size:.9rem; color:var(--ink-2); margin-bottom:4px}
+.est-rows span{display:flex; justify-content:space-between; gap:12px}
+.est-rows i{font-style:normal; min-width:0}
+.est-rows b{font-weight:600; white-space:nowrap; font-variant-numeric:tabular-nums}
+
+/* faq */
+.faq{display:grid; gap:0; border-top:1px solid var(--line); max-width:820px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center; gap:16px; padding:18px 0; font-family:var(--font-display); font-weight:650; font-size:1.08rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+"; font-size:1.5rem; font-weight:500; color:var(--turf); flex:none; width:28px; text-align:center; transition:transform .15s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details > div{padding:0 44px 18px 0; color:var(--ink-2); font-size:.98rem; line-height:1.55; max-width:68ch}
+.faq details > div p + p{margin-top:8px}
+
+/* footer */
+.site-footer{border-top:1px solid var(--line); background:var(--card); color:var(--ink-2); font-size:.92rem}
+.foot-grid{display:grid; grid-template-columns:1.3fr 1fr 1fr 1.2fr; gap:32px; padding-block:48px 36px}
+.foot-grid h4{font-family:var(--font-display); font-size:.95rem; font-weight:650; color:var(--ink); margin-bottom:12px}
+.foot-grid ul{list-style:none; margin:0; padding:0; display:grid; gap:8px}
+.foot-grid a{color:var(--ink-2); text-decoration:none}
+.foot-grid a:hover{color:var(--ink); text-decoration:underline}
+.foot-brand{display:grid; gap:12px; align-content:start}
+.foot-brand p{max-width:34ch; line-height:1.5}
+.foot-bottom{border-top:1px solid var(--line); padding-block:18px; display:flex; justify-content:space-between; gap:12px 24px; flex-wrap:wrap; font-size:.85rem}
+.foot-bottom a{color:var(--ink-2)}
+.site-footer .brand{font-size:1.15rem}
+@media (max-width: 860px){ .foot-grid{grid-template-columns:1fr 1fr} }
+@media (max-width: 520px){ .foot-grid{grid-template-columns:1fr; gap:24px} }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="BestGrass, úvod">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="6" fill="var(--turf)"/><path d="M9 24c1-6 3-10 7-14 0 5-1 9-3 14M16 24c0-5 2-9 6-12-1 5-2 9-4 12M12 24c.5-3 2-6 4-8" stroke="var(--turf-fg)" stroke-width="2.2" stroke-linecap="round" fill="none"/></svg>
+      <span>BestGrass<small>Trávníkový servis a půjčovna, Podbořany</small></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav" id="navToggle">Menu</button>
+    <nav class="nav" id="nav" aria-label="Hlavní navigace">
+      <a href="#travnik">Renovace trávníku</a>
+      <a href="#zavlaha">Závlaha</a>
+      <a href="#pujcovna">Půjčovna</a>
+      <a href="#chytra-zahrada">Chytrá zahrada</a>
+      <a href="#cenik">Ceník</a>
+      <a href="#reference">Reference</a>
+      <a href="#kontakt">Kontakt</a>
+      <a class="btn btn-primary" href="#poptavka-travnik">Nezávazná poptávka</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <h1>Zdravý trávník začíná pod povrchem.</h1>
+      <p class="lead">Regenerujeme trávníky, které ztratily hustotu a barvu: aerifikací, topdressingem, dosevem a správným hnojením. Stavíme automatické závlahy a půjčujeme stejné stroje, se kterými pracujeme sami. Zahrady i hřiště v okolí Podbořan, Žatce, Loun, Chomutova a Mostu.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#poptavka-travnik">Nezávazná poptávka</a>
+        <a class="btn btn-secondary" href="#cenik">Ceník služeb</a>
+      </div>
+      <p class="hero-phone">Raději telefonem? <strong>+420 608 845 555</strong> <span>Po–pá 8–17 h</span></p>
+    </div>
+    <figure class="hero-photo">
+      <img src="img/og-20221019_104256.jpg" alt="Aerifikátor Camon na zeleném trávníku u gabionové zdi" width="1600" height="1200" fetchpriority="high">
+      <figcaption>Aerifikace dutými hroty, aerifikátor Camon</figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="facts">
+  <div class="wrap">
+    <div class="fact"><strong>25 let zkušeností</strong><span>s měřením, dávkováním a automatizací, kterou využíváme pro řízení závlah a hnojení</span></div>
+    <div class="fact"><strong>Vlastní strojový park</strong><span>Camon, Avant, Kubota, Toro, Husqvarna. Na zakázky i k zapůjčení</span></div>
+    <div class="fact"><strong>Ceny včetně DPH</strong><span>Ceník podle plochy předem, bez skrytých položek</span></div>
+    <div class="fact"><strong>Odpovíme do 24 hodin</strong><span>Na poptávku z webu reagujeme nejpozději další pracovní den</span></div>
+  </div>
+</div>
+
+<nav class="hub" aria-label="Rozcestník služeb">
+  <div class="wrap">
+    <a class="hub-card turf" href="#travnik">
+      <img src="img/s-pujcovna.jpg" alt="" width="96" height="96" loading="lazy">
+      <div><strong>Renovace trávníku</strong><span>Aerifikace, topdressing, dosev, hnojení. Opravíme stávající trávník nebo založíme nový.</span><em>Poptat renovaci</em></div>
+    </a>
+    <a class="hub-card water" href="#zavlaha">
+      <img src="img/g-20200726_180658.jpg" alt="" width="96" height="96" loading="lazy">
+      <div><strong>Automatická závlaha</strong><span>Návrh, instalace a servis závlahy řízené počasím a vlhkostí půdy.</span><em>Poptat závlahu</em></div>
+    </a>
+    <a class="hub-card sand" href="#pujcovna">
+      <img src="img/g-20250512_100720.jpg" alt="" width="96" height="96" loading="lazy">
+      <div><strong>Půjčovna strojů</strong><span>24 strojů pro trávník a terén, vyzvednutí v Podbořanech, cena za den i víkend.</span><em>Vybrat stroj</em></div>
+    </a>
+  </div>
+</nav>
+
+<!-- ===================== 1. RENOVACE TRÁVNÍKU ===================== -->
+<section class="section" id="travnik">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Renovace trávníku</h2>
+      <p class="lead">Většina trávníků nestrádá kvůli špatnému osivu, ale kvůli zhutněné půdě, plsti a hladu. Opravíme váš stávající trávník, aniž byste ho museli zakládat znovu. Když už to nejde, založíme nový strojně a správně od profilu půdy.</p>
+    </div>
+
+    <div class="svc-grid">
+      <div class="svc-list">
+        <div class="svc">
+          <h3>Aerifikace dutými hroty se zapískováním</h3>
+          <p>Vyjmeme půdní špunty, shrabeme je, plochu zapískujeme a přihnojíme. Nejúčinnější zásah pro zhutněný, podmáčený nebo mechem zarostlý trávník. Hnojivo je v ceně.</p>
+          <div class="price">od 7 800 Kč<small>do 100 m², ceník podle plochy</small></div>
+        </div>
+        <div class="svc">
+          <h3>Aerifikace plnými hroty</h3>
+          <p>Provzdušnění bez odběru špuntů. Pravidelná údržba pro trávníky v dobré kondici.</p>
+          <div class="price">od 4 400 Kč<small>do 100 m²</small></div>
+        </div>
+        <div class="svc">
+          <h3>Vertikutace</h3>
+          <p>Prořezání plsti a mechu, aby se ke kořenům dostal vzduch, voda a hnojivo.</p>
+          <div class="price">8 Kč/m²<small>do kříže 12 Kč/m²</small></div>
+        </div>
+        <div class="svc">
+          <h3>Topdressing</h3>
+          <p>Tenká vrstva písku nebo substrátu zapravená do trávníku. Vyrovná povrch, zlepší strukturu půdy a zahustí porost.</p>
+          <div class="price">8–15 Kč/m²<small>bez materiálu</small></div>
+        </div>
+        <div class="svc">
+          <h3>Hnojení, granulované i kapalné</h3>
+          <p>Dávkujeme podle plochy a stavu trávníku, ne podle návodu na pytli. Včetně hnojiva.</p>
+          <div class="price">5–8 Kč/m²<small>podle plochy</small></div>
+        </div>
+        <div class="svc">
+          <h3>Dosev</h3>
+          <p>Zahuštění prořídlých míst, nejlépe hned po aerifikaci nebo vertikutaci.</p>
+          <div class="price">2 Kč/m²<small>bez osiva</small></div>
+        </div>
+        <div class="svc">
+          <h3>Postřik proti houbovým chorobám</h3>
+          <p>Total stop fungicid pro trávník napadený plísní nebo skvrnitostí.</p>
+          <div class="price">7 Kč/m²</div>
+        </div>
+        <div class="svc">
+          <h3>Založení trávníku strojně výsevem</h3>
+          <p>Ošetření proti plevelům, hnojivo do profilu, výsev zakladačem Avant, hnojivo na povrch. Modelace terénu bagrem nebo nivelátorem podle potřeby.</p>
+          <div class="price">od 120 Kč/m²</div>
+        </div>
+        <div class="svc">
+          <h3>Kompletní regenerace</h3>
+          <p>Kombinace zásahů podle toho, co váš trávník skutečně potřebuje. Nabídku připravíme po prohlídce na místě.</p>
+          <div class="price">individuálně</div>
+        </div>
+      </div>
+
+      <aside class="svc-aside">
+        <img src="img/s-pujcovna.jpg" alt="Aerifikátor, smykovací síť a srovnávací hrábě připravené na trávníku" width="1600" height="1200" loading="lazy">
+        <img src="img/g-20230430_130008.jpg" alt="Pískovač Topdresser při zapravení písku do trávníku" width="1600" height="1200" loading="lazy">
+        <div class="note"><strong>Sportoviště a obce.</strong> Aerifikujeme a pískujeme i fotbalová hřiště a větší obecní plochy. U ploch nad 1 000 m² počítáme cenu individuálně.</div>
+      </aside>
+    </div>
+
+    <h3 style="margin-top:clamp(48px,7vw,80px); font-size:1.5rem">Jak regenerace probíhá</h3>
+    <div class="steps">
+      <div class="step"><h3>Prohlídka a diagnóza</h3><p>Přijedeme, změříme plochu a posoudíme půdu, plsť a zhutnění. Dostanete plán zásahů a cenu podle ceníku.</p></div>
+      <div class="step"><h3>Vertikutace</h3><p>Odstraníme plsť a mech, které brání vodě a hnojivu dostat se ke kořenům.</p></div>
+      <div class="step"><h3>Aerifikace</h3><p>Dutými nebo plnými hroty podle stavu půdy. Špunty shrabeme a odvezeme.</p></div>
+      <div class="step"><h3>Topdressing a dosev</h3><p>Zapískování nebo substrát zapravíme sítí a válcem, prořídlá místa dosejeme.</p></div>
+      <div class="step"><h3>Hnojení a následná péče</h3><p>Hnojivo podle plochy a doporučení k zálivce a sekání na první týdny po zásahu.</p></div>
+    </div>
+
+    <div class="season">
+      <div class="season-head">
+        <h3 style="font-size:1.5rem">Kdy se co dělá</h3>
+        <p>Orientační kalendář. Aerifikaci a dosev plánujeme na dobu, kdy má půda nad 10 °C a tráva aktivně roste.</p>
+      </div>
+      <div class="season-scroll">
+        <div class="season-grid" role="table" aria-label="Kalendář péče o trávník podle měsíců">
+          <div class="m"></div><div class="m">III</div><div class="m">IV</div><div class="m">V</div><div class="m">VI</div><div class="m">VII</div><div class="m">VIII</div><div class="m">IX</div><div class="m">X</div><div class="m">XI</div>
+          <div class="l">Vertikutace</div><div class="c"><i></i></div><div class="c"><i></i></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"><i></i></div><div class="c"></div><div class="c"></div>
+          <div class="l">Aerifikace a topdressing</div><div class="c"></div><div class="c"><i></i></div><div class="c"><i></i></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"><i></i></div><div class="c"><i></i></div><div class="c"></div>
+          <div class="l">Hnojení</div><div class="c"><i></i></div><div class="c"></div><div class="c"><i></i></div><div class="c"></div><div class="c"><i class="half"></i></div><div class="c"><i></i></div><div class="c"></div><div class="c"><i></i></div><div class="c"></div>
+          <div class="l">Dosev a zakládání</div><div class="c"></div><div class="c"><i></i></div><div class="c"><i></i></div><div class="c"></div><div class="c"></div><div class="c"><i></i></div><div class="c"><i></i></div><div class="c"></div><div class="c"></div>
+          <div class="l">Závlaha: spuštění / zazimování</div><div class="c"></div><div class="c"><i class="w"></i></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"><i class="w"></i></div><div class="c"><i class="w"></i></div>
+        </div>
+      </div>
+      <div class="season-legend"><span><i></i>hlavní termín</span><span><i class="half"></i>podle počasí</span><span><i class="w"></i>servis závlahy</span></div>
+    </div>
+
+    <div class="form-block turf" id="poptavka-travnik">
+      <div class="form-head">
+        <h3 style="font-size:1.5rem">Poptávka renovace trávníku</h3>
+        <p>Nemusíte znát název služby. Napište, co na trávníku vidíte, a přidejte 2–4 fotky: jednu celkovou, jednu zblízka na porost a jednu na nejhorší místo. Ozveme se do 24 hodin s návrhem postupu a cenou.</p>
+      </div>
+      <form class="form" data-form="travnik" name="poptavka-travnik" method="POST" action="dekujeme.html" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+        <input type="hidden" name="form-name" value="poptavka-travnik">
+        <p class="hp" aria-hidden="true"><label>Nevyplňujte toto pole: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+        <div class="field"><label for="t-name">Jméno a příjmení</label><input id="t-name" name="jmeno" type="text" autocomplete="name" required></div>
+        <div class="field"><label for="t-phone">Telefon</label><input id="t-phone" name="telefon" type="tel" autocomplete="tel" required></div>
+        <div class="field"><label for="t-mail">E-mail</label><input id="t-mail" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="t-obec">Obec</label><input id="t-obec" name="obec" type="text" autocomplete="address-level2" placeholder="např. Žatec" required></div>
+        <div class="field"><label for="t-m2">Plocha trávníku <span>(odhad v m²)</span></label><input id="t-m2" name="plocha" type="number" min="10" step="10" inputmode="numeric" placeholder="např. 400"></div>
+        <div class="field"><label for="t-termin">Kdy to potřebujete</label>
+          <select id="t-termin" name="termin"><option value="co nejdříve">Co nejdříve</option><option value="jaro">Na jaře</option><option value="podzim">Na podzim</option><option value="nevím">Nevím, poraďte</option></select></div>
+        <div class="field full"><div class="lbl">Co trávník trápí <span>(vyberte vše, co platí)</span></div>
+          <div class="chips">
+            <label class="chip"><input type="checkbox" name="problem" value="nevim"><span>Nevím, poraďte</span></label>
+            <label class="chip"><input type="checkbox" name="problem" value="mech"><span>Mech</span></label>
+            <label class="chip"><input type="checkbox" name="problem" value="plevel"><span>Plevel</span></label>
+            <label class="chip"><input type="checkbox" name="problem" value="plst"><span>Plsť, houbovitý povrch</span></label>
+            <label class="chip"><input type="checkbox" name="problem" value="hola-mista"><span>Holá místa</span></label>
+            <label class="chip"><input type="checkbox" name="problem" value="zhutnena-puda"><span>Zhutněná půda, stojí voda</span></label>
+            <label class="chip"><input type="checkbox" name="problem" value="nerovny-povrch"><span>Nerovný povrch</span></label>
+            <label class="chip"><input type="checkbox" name="problem" value="novy-travnik"><span>Chci nový trávník</span></label>
+            <label class="chip"><input type="checkbox" name="problem" value="sportoviste"><span>Sportoviště, hřiště</span></label>
+          </div>
+        </div>
+        <div class="field full"><div class="lbl">Fotky trávníku <span>(2–4, nepovinné)</span></div>
+          <div class="file"><input id="t-foto" type="file" accept="image/*" multiple data-photos><input type="file" name="fotka1" hidden><input type="file" name="fotka2" hidden><input type="file" name="fotka3" hidden><input type="file" name="fotka4" hidden><p class="file-hint">Celkový pohled, detail porostu a problémové místo. Max. 4 fotky.</p><div class="thumbs" aria-live="polite"></div></div>
+        </div>
+        <div class="field full"><label for="t-msg">Zpráva <span>(nepovinné)</span></label><textarea id="t-msg" name="zprava" placeholder="Stáří trávníku, máte závlahu, kdy se naposledy hnojilo…"></textarea></div>
+        <label class="check full"><input type="checkbox" name="gdpr" required><span>Souhlasím se zpracováním údajů pro vyřízení poptávky. Údaje nepředáváme nikomu dalšímu. <a href="soukromi.html" target="_blank" rel="noopener">Ochrana osobních údajů</a></span></label>
+        <div class="form-msg err" hidden></div>
+        <div class="form-foot"><button class="btn btn-primary" type="submit">Odeslat poptávku</button><p>Nezávazně. Cenu dostanete předem podle ceníku.</p></div>
+      </form>
+      <div class="success" hidden>
+        <h3>Poptávka odeslána</h3>
+        <p>Děkujeme. Nejpozději další pracovní den se vám ozveme na telefon nebo e-mail s návrhem postupu a cenou. Když to spěchá, volejte +420 608 845 555.</p>
+        <button class="btn btn-secondary" type="button" data-again>Odeslat další poptávku</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 2. ZÁVLAHA ===================== -->
+<section class="section water-bg" id="zavlaha">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Automatická závlaha</h2>
+      <p class="lead">Závlaha, která zalévá podle počasí a vlhkosti půdy, ne podle hodin. Navrhneme ji na míru pozemku a zdroji vody, nainstalujeme, zaškolíme vás a každý rok ji spustíme a zazimujeme.</p>
+    </div>
+
+    <div class="two-col">
+      <div class="photo-pair">
+        <img src="img/g-20200726_180658.jpg" alt="Drážky pro rozvody závlahy vyřezané v trávníku, v pozadí drážkovač" width="1600" height="1200" loading="lazy">
+        <img src="img/g-hydrawise-mobil.jpg" alt="Ovládání závlahy Hunter Hydrawise z mobilního telefonu" width="1470" height="627" loading="lazy">
+      </div>
+      <ul class="points">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--water)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/><path d="M9.5 14.5a2.5 2.5 0 0 0 2.5 2.5"/></svg><div><strong>Řízení Hunter Hydrawise z mobilu</strong><span>Systém upravuje zálivku podle předpovědi počasí. Vidíte, kolik vody spotřebujete, a každou sekci nastavíte odkudkoli.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--water)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h16"/><path d="M6 20V9l6-5 6 5v11"/><path d="M10 20v-5h4v5"/></svg><div><strong>Čidla vlhkosti půdy a propojení s Loxone</strong><span>Zalévá se jen tehdy, když to půda skutečně potřebuje. Závlaha, osvětlení a robotická sekačka si navzájem nepřekážejí.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--water)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><strong>Úspora vody a hnojiv</strong><span>Rovnoměrná dávka v noci, kdy se nejméně odpařuje. Hnojení řízené přes závlahu se dostane ke kořenům bez zbytečných ztrát.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="var(--water)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 7 9 18l-5-5"/></svg><div><strong>Drážkování bez rozkopané zahrady</strong><span>Rozvody pokládáme drážkovačem Toro do úzké rýhy, která se zatáhne během pár týdnů. Hodí se i do stávajícího trávníku.</span></div></li>
+      </ul>
+    </div>
+
+    <div class="steps four water">
+      <div class="step"><h3>Zaměření zdarma</h3><p>Přijedeme na místo, změříme pozemek, tlak a průtok vody u zdroje.</p></div>
+      <div class="step"><h3>Návrh a cena</h3><p>Rozkreslíme sekce a postřikovače, dostanete cenu na klíč, bez odhadů od boku.</p></div>
+      <div class="step"><h3>Realizace</h3><p>Drážkování, pokládka rozvodů, osazení postřikovačů a řídicí jednotky, seřízení každé sekce.</p></div>
+      <div class="step"><h3>Předání a servis</h3><p>Zaškolíme vás v aplikaci. Na jaře závlahu spustíme, na podzim profouknutím zazimujeme.</p></div>
+    </div>
+
+    <div class="form-block water" id="poptavka-zavlahy">
+      <div class="form-head">
+        <h3 style="font-size:1.5rem">Poptávka automatické závlahy</h3>
+        <p>Cenu závlahy stanovíme po zaměření, které je zdarma. Drážkování pro rozvody a kabeláž stojí od 2 990 Kč za zahradu. Čím víc nám napíšete teď, tím přesnější bude první odhad.</p>
+      </div>
+      <form class="form" data-form="zavlaha" name="poptavka-zavlaha" method="POST" action="dekujeme.html" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+        <input type="hidden" name="form-name" value="poptavka-zavlaha">
+        <p class="hp" aria-hidden="true"><label>Nevyplňujte toto pole: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+        <div class="field"><label for="z-name">Jméno a příjmení</label><input id="z-name" name="jmeno" type="text" autocomplete="name" required></div>
+        <div class="field"><label for="z-phone">Telefon</label><input id="z-phone" name="telefon" type="tel" autocomplete="tel" required></div>
+        <div class="field"><label for="z-mail">E-mail</label><input id="z-mail" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="z-obec">Obec</label><input id="z-obec" name="obec" type="text" autocomplete="address-level2" required></div>
+        <div class="field full"><div class="lbl">Jde o</div>
+          <div class="radios">
+            <label><input type="radio" name="typ" value="nova zahrada" checked> Novou zahradu před výsevem</label>
+            <label><input type="radio" name="typ" value="stavajici travnik"> Stávající trávník</label>
+            <label><input type="radio" name="typ" value="hriste"> Hřiště nebo obecní plochu</label>
+          </div>
+        </div>
+        <div class="field"><label for="z-m2">Zavlažovaná plocha <span>(odhad v m²)</span></label><input id="z-m2" name="plocha" type="number" min="10" step="10" inputmode="numeric" placeholder="trávník + záhony"></div>
+        <div class="field"><label for="z-zdroj">Zdroj vody</label>
+          <select id="z-zdroj" name="zdroj"><option value="">Vyberte</option><option>Vodovodní řad</option><option>Studna</option><option>Vrt</option><option>Nádrž na dešťovou vodu</option><option>Zatím nevím</option></select></div>
+        <div class="field"><label for="z-el">Elektřina 230 V u zdroje vody</label>
+          <select id="z-el" name="elektrina"><option>Ano</option><option>Ne</option><option>Nevím</option></select></div>
+        <div class="field"><label for="z-smart">Chytré řízení</label>
+          <select id="z-smart" name="rizeni"><option>Hunter Hydrawise (aplikace)</option><option>Loxone, propojit s domem</option><option>Stačí základní ovládání</option><option>Poraďte</option></select></div>
+        <div class="field full"><div class="lbl">Plánek a fotky <span>(nepovinné)</span></div>
+          <div class="file"><input id="z-foto" type="file" accept="image/*,.pdf" multiple data-photos><input type="file" name="fotka1" hidden><input type="file" name="fotka2" hidden><input type="file" name="fotka3" hidden><input type="file" name="fotka4" hidden><p class="file-hint">Stačí náčrt od ruky nebo snímek z katastru a 2–3 fotky zahrady. Max. 4 soubory.</p><div class="thumbs" aria-live="polite"></div></div>
+        </div>
+        <div class="field full"><label for="z-msg">Zpráva <span>(nepovinné)</span></label><textarea id="z-msg" name="zprava" placeholder="Svah, stromy, záhony, bazén, termín…"></textarea></div>
+        <label class="check full"><input type="checkbox" name="gdpr" required><span>Souhlasím se zpracováním údajů pro vyřízení poptávky. Údaje nepředáváme nikomu dalšímu. <a href="soukromi.html" target="_blank" rel="noopener">Ochrana osobních údajů</a></span></label>
+        <div class="form-msg err" hidden></div>
+        <div class="form-foot"><button class="btn btn-water" type="submit">Poptat závlahu</button><p>Zaměření na místě je zdarma a k ničemu nezavazuje.</p></div>
+      </form>
+      <div class="success" hidden>
+        <h3>Poptávka odeslána</h3>
+        <p>Děkujeme. Ozveme se do 24 hodin a domluvíme termín zaměření. Když to spěchá, volejte +420 608 845 555.</p>
+        <button class="btn btn-secondary" type="button" data-again>Odeslat další poptávku</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 3. PŮJČOVNA ===================== -->
+<section class="section sand-bg" id="pujcovna">
+  <div class="wrap">
+    <div class="rent-intro">
+      <div class="section-head" style="margin-bottom:0">
+        <h2>Půjčovna strojů pro trávník</h2>
+        <p class="lead">Chcete si aerifikaci, topdressing nebo srovnání terénu udělat sami? Půjčíme vám stejné stroje, se kterými pracujeme na zakázkách, a poradíme postup, abyste to udělali jednou a dobře.</p>
+        <ul class="rules">
+          <li><span><strong>Rezervace online nebo telefonem.</strong> Po odeslání vám pošleme smlouvu o zápůjčce se soupisem, platbou a adresou vyzvednutí.</span></li>
+          <li><span><strong>Vyzvednutí večer od 19:00 den před zápůjčkou</strong> v Podbořanech, po dohodě i jindy. Pomůžeme s naložením.</span></li>
+          <li><span><strong>Platba převodem nebo QR kódem.</strong> Vratná kauce u větších strojů, všechny ceny včetně DPH.</span></li>
+        </ul>
+      </div>
+      <img src="img/g-20250512_100720.jpg" alt="Rozmetadlo, pískovač, vertikutátor, aerifikátor a nakladač Avant seřazené na dlažbě" width="1600" height="1200" loading="lazy">
+    </div>
+
+    <div class="filters" role="group" aria-label="Filtr strojů">
+      <button type="button" data-filter="all" aria-pressed="true">Vše</button>
+      <button type="button" data-filter="regenerace" aria-pressed="false">Regenerace trávníku</button>
+      <button type="button" data-filter="teren" aria-pressed="false">Terén a zakládání</button>
+      <button type="button" data-filter="ostatni" aria-pressed="false">Ostatní</button>
+    </div>
+    <div class="rc-grid" id="rcGrid">
+
+      <article class="rc" data-group="regenerace" id="stroj-aerifikator-camon">
+        <div class="rc-img"><img src="img/p-aerifikator-camon.jpg" alt="Aerifikátor Camon" loading="lazy" width="900" height="900"></div>
+        <div class="rc-body">
+          <h3>Aerifikátor Camon</h3>
+          <p>Dutými hroty, pracovní záběr pro zahrady i hřiště</p>
+          <div class="rc-price"><strong>1 799 Kč</strong><span>/ den</span></div>
+          <div class="rc-meta"><span class="rc-wk">víkend 3 199 Kč</span><span class="rc-dep">vratná kauce 10 000 Kč</span></div>
+          <button type="button" class="btn btn-ghost rc-btn" data-rent="aerifikator-camon">Rezervovat</button>
+        </div>
+      </article>
+
+      <article class="rc" data-group="regenerace" id="stroj-topdresser-s75">
+        <div class="rc-img"><img src="img/p-piskovacka-topdresser.jpg" alt="Pískovač Topdresser S75" loading="lazy" width="900" height="900"></div>
+        <div class="rc-body">
+          <h3>Pískovač Topdresser S75</h3>
+          <p>Rovnoměrné rozmetání písku a substrátu</p>
+          <div class="rc-price"><strong>800 Kč</strong><span>/ den</span></div>
+          <div class="rc-meta"><span class="rc-wk">víkend 1 400 Kč</span><span class="rc-dep">vratná kauce 5 000 Kč</span></div>
+          <button type="button" class="btn btn-ghost rc-btn" data-rent="topdresser-s75">Rezervovat</button>
+        </div>
+      </article>
+
+      <article class="rc" data-group="regenerace" id="stroj-vertikutator">
+        <div class="rc-img"><img src="img/p-vertikutator.jpg" alt="Vertikutátor" loading="lazy" width="900" height="900"></div>
+        <div class="rc-body">
+          <h3>Vertikutátor</h3>
+          <p>Benzínový, prořezání plsti a mechu</p>
+          <div class="rc-price"><strong>1 090 Kč</strong><span>/ den</span></div>
+          <div class="rc-meta"><span class="rc-wk">víkend na dotaz</span><span class="rc-dep">bez kauce</span></div>
+          <button type="button" class="btn btn-ghost rc-btn" data-rent="vertikutator">Rezervovat</button>
+        </div>
+      </article>
+
+      <article class="rc" data-group="regenerace" id="stroj-sberac-spuntu">
+        <div class="rc-img"><img src="img/p-sberac-bagnut.jpg" alt="Sběrač špuntů po aerifikaci 45 cm" loading="lazy" width="900" height="900"></div>
+        <div class="rc-body">
+          <h3>Sběrač špuntů po aerifikaci 45 cm</h3>
+          <p>Tlačný, sbírá špunty do koše</p>
+          <div class="rc-price"><strong>590 Kč</strong><span>/ den</span></div>
+          <div class="rc-meta"><span class="rc-wk">víkend 790 Kč</span><span class="rc-dep">vratná kauce 5 000 Kč</span></div>
+          <button type="button" class="btn btn-ghost rc-btn" data-rent="sberac-spuntu">Rezervovat</button>
+        </div>
+      </article>
+
+      <article class="rc" data-group="regenerace" id="stroj-vycesavac-hecht">
+        <div class="rc-img"><img src="img/p-sberac-spuntu.jpg" alt="Vyčesávač špuntů Hecht" loading="lazy" width="900" height="900"></div>
+        <div class="rc-body">
+          <h3>Vyčesávač špuntů Hecht</h3>
+          <p>Rychlé vyčesání po aerifikaci</p>
+          <div class="rc-price"><strong>500 Kč</strong><span>/ den</span></div>
+          <div class="rc-meta"><span class="rc-wk">víkend 800 Kč</span><span class="rc-dep">vratná kauce 5 000 Kč</span></div>
+          <button type="button" class="btn btn-ghost rc-btn" data-rent="vycesavac-hecht">Rezervovat</button>
+        </div>
+      </article>
+
+      <article class="rc" data-group="regenerace" id="stroj-aerifikacni-vidle">
+        <div class="rc-img"><img src="img/p-aerifikacni-vidle.jpg" alt="Aerifikační vidle" loading="lazy" width="900" height="900"></div>
+        <div class="rc-body">
+          <h3>Aerifikační vidle</h3>
+          <p>Ruční aerifikace malých ploch a okrajů</p>
+          <div class="rc-price"><strong>250 Kč</strong><span>/ den</span></div>
+          <div class="rc-meta"><span class="rc-wk">víkend 400 Kč</span><span class="rc-dep">bez kauce</span></div>
+          <button type="button" class="btn btn-ghost rc-btn" data-rent="aerifikacni-vidle">Rezervovat</button>
+        </div>
+      </article>
+
+      <article class="rc" data-group="regenerace" id="stroj-smykovaci-sit">
+        <div class="rc-img"><img src="img/p-smykovaci-sit.jpg" alt="Smykovací síť" loading="lazy" width="900" height="900"></div>
+        <div class="rc-body">
+          <h3>Smykovací síť</h3>
+          <p>Zapravení písku a substrátu do trávníku</p>
+          <div class="rc-price"><strong>450 Kč</strong><span>/ den</span></div>
+          <div class="rc-meta"><span class="rc-wk">víkend 600 Kč</span><span class="rc-dep">vratná kauce 5 000 Kč</span></div>
+          <button type="button" class="btn btn-ghost rc-btn" data-rent="smykovaci-sit">Rezervovat</button>
+        </div>
+      </article>
+
+      <article class="rc" data-group="regenerace" id="stroj-substratovy-valec">
+        <div class="rc-img"><img src="img/p-substratovy-valec.jpg" alt="Substrátový válec" loading="lazy" width="900" height="900"></div>
+        <div class="rc-body">
+          <h3>Substrátový válec</h3>
+          <p>Síťový válec pro rozhrnutí substrátu</p>
+          <div class="rc-price"><strong>350 Kč</strong><span>/ den</span></div>
+          <div class="rc-meta"><span class="rc-wk">víkend 500 Kč</span><span class="rc-dep">vratná kauce 5 000 Kč</span></div>
+          <button type="button" class="btn btn-ghost rc-btn" data-rent="substratovy-valec">Rezervovat</button>
+        </div>
+      </article>
+
+      <article class="rc" data-group="regenerace" id="stroj-rozmetadlo-accu">
+        <div class="rc-img"><img src="img/p-rozmetadlo-accu.jpg" alt="Rozmetadlo ICL AccuPro" loading="lazy" width="900" height="900"></div>
+        <div class="rc-body">
+          <h3>Rozmetadlo ICL AccuPro</h3>
+          <p>Přesné dávkování hnojiva a osiva</p>
+          <div class="rc-price"><strong>349 Kč</strong><span>/ den</span></div>
+          <div class="rc-meta"><span class="rc-wk">víkend 599 Kč</span><span class="rc-dep">vratná kauce 2 000 Kč</span></div>
+          <button type="button" class="btn btn-ghost rc-btn" data-rent="rozmetadlo-accu">Rezervovat</button>
+        </div>
+      </article>
+
+      <article class="rc" data-group="regenerace" id="stroj-rozmetadlo-husqvarna">
+        <div class="rc-img"><img src="img/p-rozmetadlo-husqvarna.jpg" alt="Rozmetadlo tažné Husqvarna" loading="lazy" width="900" height="900"></div>
+        <div class="rc-body">
+          <h3>Rozmetadlo tažné Husqvarna</h3>
+          <p>Za zahradní traktor, větší plochy</p>
+          <div class="rc-price"><strong>750 Kč</strong><span>/ den</span></div>
+          <div class="rc-meta"><span class="rc-wk">víkend na dotaz</span><span class="rc-dep">bez kauce</span></div>
+          <button type="button" class="btn btn-ghost rc-btn" data-rent="rozmetadlo-husqvarna">Rezervovat</button>
+        </div>
+      </article>
+
+      <article class="rc" data-group="teren" id="stroj-slupovacka-drnu">
+        <div class="rc-img"><img src="img/p-slupovacka-drnu.jpg" alt="Slupovačka drnu" loading="lazy" width="900" height="900"></div>
+        <div class="rc-body">
+          <h3>Slupovačka drnu</h3>
+          <p>Sloupne starý trávník před novým založením</p>
+          <div class="rc-price"><strong>1 100 Kč</strong><span>/ den</span></div>
+          <div class="rc-meta"><span class="rc-wk">víkend 2 000 Kč</span><span class="rc-dep">vratná kauce 10 000 Kč</span></div>
+          <button type="button" class="btn btn-ghost rc-btn" data-rent="slupovacka-drnu">Rezervovat</button>
+        </div>
+      </article>
+
+      <article class="rc" data-group="teren" id="stroj-minibagr-kubota">
+        <div class="rc-img"><img src="img/p-minibagr-kubota.jpg" alt="Minibagr Kubota K008-3" loading="lazy" width="900" height="900"></div>
+        <div class="rc-body">
+          <h3>Minibagr Kubota K008-3</h3>
+          <p>Cena za 6 motohodin/den, další hodina 300 Kč</p>
+          <div class="rc-price"><strong>1 700 Kč</strong><span>/ den</span></div>
+          <div class="rc-meta"><span class="rc-wk">víkend na dotaz</span><span class="rc-dep">vratná kauce 25 000 Kč</span></div>
+          <button type="button" class="btn btn-ghost rc-btn" data-rent="minibagr-kubota">Rezervovat</button>
+        </div>
+      </article>
+
+      <article class="rc" data-group="teren" id="stroj-hrabe-srovnavacky">
+        <div class="rc-img"><img src="img/p-srovnavaci-hrabe.jpg" alt="Srovnávací hrábě" loading="lazy" width="900" height="900"></div>
+        <div class="rc-body">
+          <h3>Srovnávací hrábě</h3>
+          <p>Hliníkové, pro finální urovnání před výsevem</p>
+          <div class="rc-price"><strong>499 Kč</strong><span>/ den</span></div>
+          <div class="rc-meta"><span class="rc-wk">víkend 800 Kč</span><span class="rc-dep">vratná kauce 800 Kč</span></div>
+          <button type="button" class="btn btn-ghost rc-btn" data-rent="hrabe-srovnavacky">Rezervovat</button>
+        </div>
+      </article>
+
+      <article class="rc" data-group="teren" id="stroj-brana-90">
+        <div class="rc-img"><img src="img/p-nivelacni-brana-90.jpg" alt="Nivelační brána 90 cm" loading="lazy" width="900" height="900"></div>
+        <div class="rc-body">
+          <h3>Nivelační brána 90 cm</h3>
+          <p>Zapravení a urovnání povrchu</p>
+          <div class="rc-price"><strong>90 Kč</strong><span>/ den</span></div>
+          <div class="rc-meta"><span class="rc-wk">víkend 150 Kč</span><span class="rc-dep">bez kauce</span></div>
+          <button type="button" class="btn btn-ghost rc-btn" data-rent="brana-90">Rezervovat</button>
+        </div>
+      </article>
+
+      <article class="rc" data-group="teren" id="stroj-brana-115">
+        <div class="rc-img"><img src="img/p-nivelacni-brana-115.jpg" alt="Nivelační brána 115 cm" loading="lazy" width="900" height="900"></div>
+        <div class="rc-body">
+          <h3>Nivelační brána 115 cm</h3>
+          <p>Širší záběr pro větší plochy</p>
+          <div class="rc-price"><strong>90 Kč</strong><span>/ den</span></div>
+          <div class="rc-meta"><span class="rc-wk">víkend 150 Kč</span><span class="rc-dep">bez kauce</span></div>
+          <button type="button" class="btn btn-ghost rc-btn" data-rent="brana-115">Rezervovat</button>
+        </div>
+      </article>
+
+      <article class="rc" data-group="teren" id="stroj-rucni-valec">
+        <div class="rc-img"><img src="img/p-rucni-valec.jpg" alt="Ruční válec" loading="lazy" width="900" height="900"></div>
+        <div class="rc-body">
+          <h3>Ruční válec</h3>
+          <p>Utužení po výsevu</p>
+          <div class="rc-price"><strong>250 Kč</strong><span>/ den</span></div>
+          <div class="rc-meta"><span class="rc-wk">víkend na dotaz</span><span class="rc-dep">bez kauce</span></div>
+          <button type="button" class="btn btn-ghost rc-btn" data-rent="rucni-valec">Rezervovat</button>
+        </div>
+      </article>
+
+      <article class="rc" data-group="teren" id="stroj-tazeny-valec">
+        <div class="rc-img"><img src="img/p-tazeny-valec.jpg" alt="Tažený válec za traktůrek" loading="lazy" width="900" height="900"></div>
+        <div class="rc-body">
+          <h3>Tažený válec za traktůrek</h3>
+          <p>Pro větší plochy</p>
+          <div class="rc-price"><strong>300 Kč</strong><span>/ den</span></div>
+          <div class="rc-meta"><span class="rc-wk">víkend na dotaz</span><span class="rc-dep">bez kauce</span></div>
+          <button type="button" class="btn btn-ghost rc-btn" data-rent="tazeny-valec">Rezervovat</button>
+        </div>
+      </article>
+
+      <article class="rc" data-group="ostatni" id="stroj-najezdy">
+        <div class="rc-img"><img src="img/p-najezdy.jpg" alt="Hliníkové nájezdy" loading="lazy" width="900" height="900"></div>
+        <div class="rc-body">
+          <h3>Hliníkové nájezdy</h3>
+          <p>Nakládka strojů na vozík</p>
+          <div class="rc-price"><strong>99 Kč</strong><span>/ den</span></div>
+          <div class="rc-meta"><span class="rc-wk">víkend 99 Kč</span><span class="rc-dep">bez kauce</span></div>
+          <button type="button" class="btn btn-ghost rc-btn" data-rent="najezdy">Rezervovat</button>
+        </div>
+      </article>
+
+      <article class="rc" data-group="ostatni" id="stroj-popruhy">
+        <div class="rc-img"><img src="img/p-popruhy.jpg" alt="Upínací popruhy s ráčnou" loading="lazy" width="900" height="900"></div>
+        <div class="rc-body">
+          <h3>Upínací popruhy s ráčnou</h3>
+          <p>Zajištění nákladu</p>
+          <div class="rc-price"><strong>25 Kč</strong><span>/ den</span></div>
+          <div class="rc-meta"><span class="rc-wk">víkend 40 Kč</span><span class="rc-dep">bez kauce</span></div>
+          <button type="button" class="btn btn-ghost rc-btn" data-rent="popruhy">Rezervovat</button>
+        </div>
+      </article>
+
+      <article class="rc" data-group="ostatni" id="stroj-orezavac-gude">
+        <div class="rc-img"><img src="img/p-orezavac-gude.jpg" alt="Ořezávač hran Güde" loading="lazy" width="900" height="900"></div>
+        <div class="rc-body">
+          <h3>Ořezávač hran Güde</h3>
+          <p>Čisté hrany u záhonů a cest</p>
+          <div class="rc-price"><strong>500 Kč</strong><span>/ den</span></div>
+          <div class="rc-meta"><span class="rc-wk">víkend 800 Kč</span><span class="rc-dep">vratná kauce 5 000 Kč</span></div>
+          <button type="button" class="btn btn-ghost rc-btn" data-rent="orezavac-gude">Rezervovat</button>
+        </div>
+      </article>
+
+      <article class="rc" data-group="ostatni" id="stroj-orezavac-gude-velky">
+        <div class="rc-img"><img src="img/p-orezavac-gude-velky.jpg" alt="Ořezávač hran Güde velký" loading="lazy" width="900" height="900"></div>
+        <div class="rc-body">
+          <h3>Ořezávač hran Güde velký</h3>
+          <p>Benzínový, pro dlouhé hrany</p>
+          <div class="rc-price"><strong>750 Kč</strong><span>/ den</span></div>
+          <div class="rc-meta"><span class="rc-wk">víkend na dotaz</span><span class="rc-dep">bez kauce</span></div>
+          <button type="button" class="btn btn-ghost rc-btn" data-rent="orezavac-gude-velky">Rezervovat</button>
+        </div>
+      </article>
+
+      <article class="rc" data-group="ostatni" id="stroj-aku-postrikovac">
+        <div class="rc-img"><img src="img/p-aku-postrikovac.jpg" alt="Aku postřikovač" loading="lazy" width="900" height="900"></div>
+        <div class="rc-body">
+          <h3>Aku postřikovač</h3>
+          <p>Hnojení a postřiky na zádech</p>
+          <div class="rc-price"><strong>200 Kč</strong><span>/ den</span></div>
+          <div class="rc-meta"><span class="rc-wk">víkend 350 Kč</span><span class="rc-dep">bez kauce</span></div>
+          <button type="button" class="btn btn-ghost rc-btn" data-rent="aku-postrikovac">Rezervovat</button>
+        </div>
+      </article>
+
+      <article class="rc" data-group="ostatni" id="stroj-vytrhavac-plevele">
+        <div class="rc-img"><img src="img/p-vytrhavac-plevele.jpg" alt="Vytrhávač plevele Fiskars" loading="lazy" width="900" height="900"></div>
+        <div class="rc-body">
+          <h3>Vytrhávač plevele Fiskars</h3>
+          <p>Pampelišky i s kořenem, bez ohýbání</p>
+          <div class="rc-price"><strong>200 Kč</strong><span>/ den</span></div>
+          <div class="rc-meta"><span class="rc-wk">víkend na dotaz</span><span class="rc-dep">bez kauce</span></div>
+          <button type="button" class="btn btn-ghost rc-btn" data-rent="vytrhavac-plevele">Rezervovat</button>
+        </div>
+      </article>
+
+      <article class="rc" data-group="ostatni" id="stroj-gril">
+        <div class="rc-img"><img src="img/p-gril.jpg" alt="Nerezový gril na dřevo" loading="lazy" width="900" height="900"></div>
+        <div class="rc-body">
+          <h3>Nerezový gril na dřevo</h3>
+          <p>Na 2 kuřata nebo 1 kýtu, na zahradní slavnost</p>
+          <div class="rc-price"><strong>750 Kč</strong><span>/ den</span></div>
+          <div class="rc-meta"><span class="rc-wk">víkend 1 300 Kč</span><span class="rc-dep">bez kauce</span></div>
+          <button type="button" class="btn btn-ghost rc-btn" data-rent="gril">Rezervovat</button>
+        </div>
+      </article>
+    </div>
+
+    <div class="form-block sand" id="rezervace">
+      <div class="form-head">
+        <h3 style="font-size:1.5rem">Rezervace zápůjčky</h3>
+        <p>Vyberte jeden nebo více strojů a termín. Cenu spočítáme hned. Odeslání je žádost o rezervaci, dostupnost potvrdíme do 24 hodin smlouvou e-mailem. Víkendová sazba platí od pátečního večera do pondělního rána.</p>
+      </div>
+      <form class="form" data-form="rezervace" name="rezervace-pujcovna" method="POST" action="dekujeme.html" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+        <input type="hidden" name="form-name" value="rezervace-pujcovna">
+        <p class="hp" aria-hidden="true"><label>Nevyplňujte toto pole: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+        <div class="field full picker">
+          <div class="lbl">Co si chcete půjčit <span>(lze vybrat více strojů)</span></div>
+          <div class="picked" id="picked" aria-live="polite"></div>
+          <select id="r-stroj" aria-label="Přidat stroj do rezervace"><option value="">Přidat stroj…</option>
+<option value="aerifikator-camon">Aerifikátor Camon (1 799 Kč/den)</option>
+<option value="topdresser-s75">Pískovač Topdresser S75 (800 Kč/den)</option>
+<option value="vertikutator">Vertikutátor (1 090 Kč/den)</option>
+<option value="sberac-spuntu">Sběrač špuntů po aerifikaci 45 cm (590 Kč/den)</option>
+<option value="vycesavac-hecht">Vyčesávač špuntů Hecht (500 Kč/den)</option>
+<option value="aerifikacni-vidle">Aerifikační vidle (250 Kč/den)</option>
+<option value="smykovaci-sit">Smykovací síť (450 Kč/den)</option>
+<option value="substratovy-valec">Substrátový válec (350 Kč/den)</option>
+<option value="rozmetadlo-accu">Rozmetadlo ICL AccuPro (349 Kč/den)</option>
+<option value="rozmetadlo-husqvarna">Rozmetadlo tažné Husqvarna (750 Kč/den)</option>
+<option value="slupovacka-drnu">Slupovačka drnu (1 100 Kč/den)</option>
+<option value="minibagr-kubota">Minibagr Kubota K008-3 (1 700 Kč/den)</option>
+<option value="hrabe-srovnavacky">Srovnávací hrábě (499 Kč/den)</option>
+<option value="brana-90">Nivelační brána 90 cm (90 Kč/den)</option>
+<option value="brana-115">Nivelační brána 115 cm (90 Kč/den)</option>
+<option value="rucni-valec">Ruční válec (250 Kč/den)</option>
+<option value="tazeny-valec">Tažený válec za traktůrek (300 Kč/den)</option>
+<option value="najezdy">Hliníkové nájezdy (99 Kč/den)</option>
+<option value="popruhy">Upínací popruhy s ráčnou (25 Kč/den)</option>
+<option value="orezavac-gude">Ořezávač hran Güde (500 Kč/den)</option>
+<option value="orezavac-gude-velky">Ořezávač hran Güde velký (750 Kč/den)</option>
+<option value="aku-postrikovac">Aku postřikovač (200 Kč/den)</option>
+<option value="vytrhavac-plevele">Vytrhávač plevele Fiskars (200 Kč/den)</option>
+<option value="gril">Nerezový gril na dřevo (750 Kč/den)</option>
+          </select>
+          <input type="hidden" name="stroje" id="r-stroje">
+        </div>
+        <div class="field"><label for="r-od">Zápůjčka od</label><input id="r-od" name="od" type="date" required></div>
+        <div class="field"><label for="r-do">Zápůjčka do <span>(včetně)</span></label><input id="r-do" name="do" type="date"></div>
+        <div class="estimate" id="estimate" hidden></div>
+        <div class="field"><label for="r-name">Jméno a příjmení</label><input id="r-name" name="jmeno" type="text" autocomplete="name" required></div>
+        <div class="field"><label for="r-phone">Telefon</label><input id="r-phone" name="telefon" type="tel" autocomplete="tel" required></div>
+        <div class="field"><label for="r-mail">E-mail <span>(pošleme sem smlouvu)</span></label><input id="r-mail" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="r-adresa">Adresa</label><input id="r-adresa" name="adresa" type="text" autocomplete="street-address" required></div>
+        <div class="field"><label for="r-voucher">Číslo slevového voucheru <span>(pokud máte)</span></label><input id="r-voucher" name="voucher" type="text"></div>
+        <div class="field"><label for="r-vyzvednuti">Vyzvednutí</label>
+          <select id="r-vyzvednuti" name="vyzvednuti"><option>Večer od 19:00 den před zápůjčkou</option><option>Jiný čas, upřesním v poznámce</option></select></div>
+        <div class="field full"><label for="r-msg">Poznámka <span>(nepovinné)</span></label><textarea id="r-msg" name="zprava" placeholder="Plocha, kterou chcete ošetřit, jiný čas vyzvednutí…"></textarea></div>
+        <label class="check full"><input type="checkbox" name="podminky" required><span>Souhlasím s podmínkami zápůjčky: vratná kauce, předložení občanského průkazu, vrácení stroje čistého a v dohodnutém termínu. <a href="soukromi.html" target="_blank" rel="noopener">Jak nakládáme s údaji</a></span></label>
+        <div class="form-msg err" hidden></div>
+        <div class="form-foot"><button class="btn btn-sand" type="submit">Rezervovat</button><p>Nevíte, který stroj je pro vás? Napište to do poznámky, poradíme.</p></div>
+      </form>
+      <div class="success" hidden>
+        <h3>Rezervace přijata</h3>
+        <p>Děkujeme. Do 24 hodin vám pošleme smlouvu o zápůjčce se soupisem, platebními údaji a adresou vyzvednutí. Rezervace platí po jejím potvrzení.</p>
+        <button class="btn btn-secondary" type="button" data-again>Nová rezervace</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 4. CHYTRÁ ZAHRADA (LOXONE) ===================== -->
+<section class="section night-bg" id="chytra-zahrada">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Zahrada a dům, které se řídí samy</h2>
+      <p class="lead">Na platformě Loxone propojujeme závlahu, osvětlení, robotické sekačky, stínění, zabezpečení i vytápění do jednoho systému. Jedna aplikace a jedna logika místo pěti krabiček, které o sobě nevědí.</p>
+    </div>
+    <div class="smart-grid">
+      <div class="smart-photo">
+        <img class="main" src="img/s-kompletni-dum.jpg" alt="Osvětlený dům a trávník se zahradním osvětlením za soumraku" width="1600" height="740" loading="lazy">
+        <div class="pair">
+          <img src="img/g-light.jpg" alt="Zahradní svítidla osvětlující dlažbu a záhon" width="1024" height="1024" loading="lazy">
+          <img src="img/g-IMG_20230912_084212.jpg" alt="Robotická sekačka Husqvarna na trávníku" width="1600" height="1200" loading="lazy">
+        </div>
+      </div>
+      <div>
+        <ul class="uses">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg><div><strong>Závlaha podle vlhkosti půdy</strong><span>Čidla v půdě a předpověď počasí rozhodují, kdy a kolik se zalije. Déšť závlahu odloží, vedro ji přidá.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"/></svg><div><strong>Světelné scény na zahradě i v domě</strong><span>Večerní nálada, cesta k autu, úsporný noční režim. Scény se přepínají samy podle času, soumraku a přítomnosti.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="10" rx="3"/><path d="M7 13h.01M12 13h.01M17 13h.01M12 4v4"/></svg><div><strong>Robotická sekačka jako součást systému</strong><span>Seká, když se nezalévá a nikdo není na zahradě. Instalujeme a servisujeme roboty Husqvarna, od zahrad po hřiště.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="M4 9h16M4 14h16"/></svg><div><strong>Stínění, vytápění a větrání</strong><span>Žaluzie podle slunce, topení podle toho, kdo je doma. Zahrada a dům jedou na stejném Miniserveru.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3z"/><path d="m9 12 2 2 4-4"/></svg><div><strong>Zabezpečení a kamery Hikvision</strong><span>Alarm, kamery a přístupy v jednom systému s osvětlením. Autorizovaný dodavatel Hikvision přes 15 let, pro domy i průmyslové objekty.</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 15c2-2 4-2 6 0s4 2 6 0 4-2 6 0M3 19c2-2 4-2 6 0s4 2 6 0 4-2 6 0M12 4v7"/></svg><div><strong>Bazén a vodní prvky</strong><span>Filtrace, ohřev a osvětlení vody řízené stejnou aplikací jako zbytek zahrady.</span></div></li>
+        </ul>
+        <div class="night-cta">
+          <a class="btn btn-lamp" href="#kontakt" data-topic="chytra-zahrada">Domluvit konzultaci</a>
+          <a class="btn btn-night-ghost" href="#poptavka-zavlahy">Začít závlahou</a>
+        </div>
+        <div class="brands" aria-label="Značky, se kterými pracujeme"><span>Loxone</span><span>Hunter Hydrawise</span><span>Husqvarna Automower</span><span>Hikvision</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== REFERENCE ===================== -->
+<section class="section" id="reference">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Co říkají zákazníci</h2>
+      <p class="lead">Zahrady, hřiště a domy v okolí Podbořan, Žatce a Loun.</p>
+    </div>
+    <div class="ref-grid">
+
+      <figure class="ref">
+        <blockquote>„Využili jsme služby instalace závlahy a bezúdržbového trávníku a jsme naprosto spokojeni. Práce byla provedena rychle a profesionálně, trávník vypadá nádherně a je příjemně měkký při chůzi.“</blockquote>
+        <figcaption><span class="ref-ini" aria-hidden="true">HZ</span><span><strong>Hana Zítková</strong><br>Závlaha a trávník na pískovém loži</span></figcaption>
+      </figure>
+
+      <figure class="ref">
+        <blockquote>„Díky automatizované závlaze řízené vlhkostí půdy, propojené s robotem, se podařilo ušetřit hodně vody a energie. Při péči o sportoviště využíváme i řízení osvětlení. Trávník je vždy krásně zelený a zdravý.“</blockquote>
+        <figcaption><span class="ref-ini" aria-hidden="true">HS</span><span><strong>Honza Svoboda</strong><br>Závlaha, osvětlení a robot na klíč, Loxone + Husqvarna</span></figcaption>
+      </figure>
+
+      <figure class="ref">
+        <blockquote>„Aerifikace prokázala svůj efekt. Trávník je nyní mnohem zdravější a hustší, což se projevilo i na jeho odolnosti. Hrajeme si na něm často.“</blockquote>
+        <figcaption><span class="ref-ini" aria-hidden="true">JM</span><span><strong>Jan Marek</strong><br>Topdressing a zahradní osvětlení</span></figcaption>
+      </figure>
+
+      <figure class="ref">
+        <blockquote>„Náš dříve skromný trávník se díky topdressingu a aerifikaci proměnil v krásný a zdravý kousek přírody. Doporučuji všem, kdo chtějí mít na zahradě opravdový trávník.“</blockquote>
+        <figcaption><span class="ref-ini" aria-hidden="true">AK</span><span><strong>Aneta Krejčí</strong><br>Topdressing a aerifikace</span></figcaption>
+      </figure>
+
+      <figure class="ref">
+        <blockquote>„S robotickým sekáním jsme se konečně zbavili neustálého stresu z péče o trávník. Robot pracuje spolehlivě a precizně, my si můžeme užívat krásnou zahradu.“</blockquote>
+        <figcaption><span class="ref-ini" aria-hidden="true">LS</span><span><strong>Lucie Sladěná</strong><br>Robotické sekání, jarní a podzimní servis</span></figcaption>
+      </figure>
+
+      <figure class="ref">
+        <blockquote>„Osvětlení je opravdovým klenotem naší zahrady. Díky inteligentnímu systému se automaticky přizpůsobuje podmínkám a vytváří úžasnou atmosféru ve večerních hodinách.“</blockquote>
+        <figcaption><span class="ref-ini" aria-hidden="true">JD</span><span><strong>Jaroslav Dvořák</strong><br>Světelné scény na zahradě</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== REALIZACE ===================== -->
+<section class="section" id="realizace" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Z našich realizací</h2>
+    </div>
+    <div class="gal">
+<figure class="gal-item wide"><img src="img/g-20220924_144915.jpg" alt="Příprava půdy před výsevem, Avant se zakladačem" loading="lazy"><figcaption>Příprava půdy před výsevem, Avant se zakladačem</figcaption></figure>
+<figure class="gal-item "><img src="img/g-20221110_154108.jpg" alt="Nově založený trávník několik týdnů po výsevu" loading="lazy"><figcaption>Nově založený trávník několik týdnů po výsevu</figcaption></figure>
+<figure class="gal-item "><img src="img/g-20200726_180658.jpg" alt="Drážkování pro rozvody automatické závlahy" loading="lazy"><figcaption>Drážkování pro rozvody automatické závlahy</figcaption></figure>
+<figure class="gal-item tall"><img src="img/g-20250331_175421.jpg" alt="Trávníkový pás podél dlažby po podzimní regeneraci" loading="lazy"><figcaption>Trávníkový pás podél dlažby po podzimní regeneraci</figcaption></figure>
+<figure class="gal-item "><img src="img/g-20221019_104552.jpg" alt="Aerifikátor, smykovací síť a válec před regenerací" loading="lazy"><figcaption>Aerifikátor, smykovací síť a válec před regenerací</figcaption></figure>
+<figure class="gal-item "><img src="img/g-20230430_130008.jpg" alt="Topdressing: pískovač na zahradě" loading="lazy"><figcaption>Topdressing: pískovač na zahradě</figcaption></figure>
+<figure class="gal-item tall"><img src="img/g-20251021_114621.jpg" alt="Ostré hrany a hustý porost po sezóně" loading="lazy"><figcaption>Ostré hrany a hustý porost po sezóně</figcaption></figure>
+<figure class="gal-item wide"><img src="img/g-IMG_20230912_084212.jpg" alt="Robotická sekačka na regenerovaném trávníku" loading="lazy"><figcaption>Robotická sekačka na regenerovaném trávníku</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CENÍK ===================== -->
+<section class="section water-bg" id="cenik">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Ceník služeb</h2>
+      <p class="lead">Všechny ceny jsou včetně DPH. U ploch nad 1 000 m² a u sportovišť připravíme individuální nabídku. Doprava se počítá podle vzdálenosti.</p>
+    </div>
+    <div class="price-grid">
+      <div class="price-card">
+        <h3>Aerifikace dutými hroty se zapískováním</h3>
+        <p>Shrabání půdních špuntů, zapískování a hnojivo jsou v ceně. Písek a jeho doprava se účtují podle vzdálenosti.</p>
+        <table class="bands"><thead><tr><th>Plocha trávníku</th><th>Cena</th></tr></thead><tbody><tr><td>do 100 m²</td><td>7 800 Kč</td></tr>
+<tr><td>101–150 m²</td><td>8 900 Kč</td></tr>
+<tr><td>151–200 m²</td><td>9 900 Kč</td></tr>
+<tr><td>201–250 m²</td><td>10 900 Kč</td></tr>
+<tr><td>251–300 m²</td><td>11 900 Kč</td></tr>
+<tr><td>301–350 m²</td><td>12 900 Kč</td></tr>
+<tr><td>351–400 m²</td><td>13 900 Kč</td></tr>
+<tr><td>401–450 m²</td><td>14 900 Kč</td></tr>
+<tr><td>451–500 m²</td><td>15 900 Kč</td></tr>
+<tr><td>501–600 m²</td><td>17 400 Kč</td></tr>
+<tr><td>601–700 m²</td><td>18 900 Kč</td></tr>
+<tr><td>701–800 m²</td><td>20 400 Kč</td></tr>
+<tr><td>801–900 m²</td><td>21 900 Kč</td></tr>
+<tr><td>901–1 000 m²</td><td>23 400 Kč</td></tr></tbody></table>
+        <p class="inc">Odvoz a likvidace bioodpadu +500 Kč.</p>
+      </div>
+      <div class="price-card">
+        <h3>Aerifikace plnými hroty</h3>
+        <p>Provzdušnění bez odběru špuntů, pro pravidelnou údržbu trávníku v dobré kondici.</p>
+        <table class="bands"><thead><tr><th>Plocha trávníku</th><th>Cena</th></tr></thead><tbody><tr><td>do 100 m²</td><td>4 400 Kč</td></tr>
+<tr><td>101–200 m²</td><td>4 900 Kč</td></tr>
+<tr><td>201–300 m²</td><td>5 400 Kč</td></tr>
+<tr><td>301–400 m²</td><td>5 900 Kč</td></tr>
+<tr><td>401–500 m²</td><td>6 400 Kč</td></tr>
+<tr><td>501–600 m²</td><td>6 900 Kč</td></tr>
+<tr><td>601–700 m²</td><td>7 400 Kč</td></tr>
+<tr><td>701–800 m²</td><td>7 900 Kč</td></tr>
+<tr><td>801–900 m²</td><td>8 400 Kč</td></tr>
+<tr><td>901–1 000 m²</td><td>8 900 Kč</td></tr></tbody></table>
+      </div>
+      <div class="price-card">
+        <h3>Hnojení trávníku</h3>
+        <p>Granulované nebo kapalné hnojivo, v ceně. Dávka podle plochy a období.</p>
+        <table class="bands"><thead><tr><th>Plocha trávníku</th><th>Cena</th></tr></thead><tbody><tr><td>do 200 m²</td><td>8 Kč/m²</td></tr>
+<tr><td>201–500 m²</td><td>7 Kč/m²</td></tr>
+<tr><td>501–1 000 m²</td><td>6 Kč/m²</td></tr>
+<tr><td>nad 1 000 m²</td><td>5 Kč/m²</td></tr></tbody></table>
+        <h3 style="margin-top:8px">Další služby za m²</h3>
+        <table class="bands"><thead><tr><th>Služba</th><th>Cena</th></tr></thead><tbody><tr><td>Vertikutace<small>do kříže 12 Kč/m²</small></td><td>8 Kč/m²</td></tr>
+<tr><td>Topdressing<small>podle velikosti plochy, bez materiálu</small></td><td>8–15 Kč/m²</td></tr>
+<tr><td>Total stop postřik fungicidem</td><td>7 Kč/m²</td></tr>
+<tr><td>Dosev trávníku<small>bez osiva</small></td><td>2 Kč/m²</td></tr>
+<tr><td>Instalace substrátu<small>podle velikosti trávníku</small></td><td>8–15 Kč/m²</td></tr>
+<tr><td>Sekání riderem<small>od 300 m²</small></td><td>3–4 Kč/m²</td></tr>
+<tr><td>Zaříznutí okrajů</td><td>20–30 Kč/bm</td></tr>
+<tr><td>Založení trávníku strojně výsevem<small>včetně hnojiva a ošetření proti plevelům</small></td><td>od 120 Kč/m²</td></tr></tbody></table>
+      </div>
+      <div class="price-card">
+        <h3>Terén, doprava a konzultace</h3>
+        <table class="bands"><thead><tr><th>Služba</th><th>Cena</th></tr></thead><tbody><tr><td>Modelace a srovnání terénu (Avant 220 / bagr 1 t)<small>so–ne 1 500 Kč/hod</small></td><td>1 000 Kč/hod</td></tr>
+<tr><td>Srovnání povrchu nivelátorem<small>so–ne 1 500 Kč/hod</small></td><td>1 000 Kč/hod</td></tr>
+<tr><td>Drážkování pro trubky a kabeláž<small>za zahradu</small></td><td>od 2 990 Kč</td></tr>
+<tr><td>Konzultace trávníkáře na místě</td><td>800 Kč/hod</td></tr>
+<tr><td>Návrh zahrady, konzultace</td><td>500 Kč/hod</td></tr>
+<tr><td>Odvoz a likvidace bioodpadu<small>k aerifikaci se zapískováním</small></td><td>500 Kč</td></tr>
+<tr><td>Doprava písku a hlíny sklápěčem 2,5 t<small>podle vzdálenosti</small></td><td>dohodou</td></tr>
+<tr><td>Drcení větví a náletů, sekání cepákem</td><td>na objednání</td></tr></tbody></table>
+        <p class="inc">Založení trávníku: ošetření proti plevelům, hnojivo do profilu, založení zakladačem, hnojivo na povrch. Substrát a jeho instalace jsou volitelná položka navíc.</p>
+      </div>
+    </div>
+    <p class="price-note">Půjčovna má vlastní ceník u každého stroje výše: cena za den, za víkend a výše vratné kauce. Rezervace a platba jsou možné převodem nebo QR kódem.</p>
+  </div>
+</section>
+
+<!-- ===================== ČASTÉ OTÁZKY ===================== -->
+<section class="section" id="otazky">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Časté otázky</h2>
+      <p class="lead">Co se nás lidé ptají, než pošlou poptávku.</p>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Musím vědět, jakou službu potřebuji?</summary>
+        <div><p>Ne. Popište, co na trávníku vidíte (mech, holá místa, stojící voda, houbovitý povrch), napište přibližnou plochu a přidejte fotky. Postup navrhneme my. Když to z fotek nejde posoudit, domluvíme prohlídku na místě, konzultace trávníkáře stojí 800 Kč za hodinu a při zakázce ji nepočítáme.</p></div>
+      </details>
+      <details>
+        <summary>Kolik stojí kompletní regenerace trávníku?</summary>
+        <div><p>Záleží na stavu trávníku, proto v ceníku uvádíme jednotlivé zásahy, ne jednu paušální cenu. Orientační příklad pro zahradu 300 m²: vertikutace 2 400 Kč, aerifikace dutými hroty se zapískováním a hnojivem 11 900 Kč, dosev 600 Kč. Celkem asi 14 900 Kč včetně DPH, bez osiva, písku a jeho dopravy. Přesnou cenu dostanete předem podle ceníku, ne až po práci.</p></div>
+      </details>
+      <details>
+        <summary>Kdy je nejlepší termín na regeneraci?</summary>
+        <div><p>Duben až květen a září až říjen, kdy má půda nad 10 °C a tráva aktivně roste. V létě za sucha aerifikaci a dosev neděláme, trávník by se nestihl zotavit. Hnojení a sekání řešíme celou sezónu. Termíny se plní, poptávku na jaro posílejte ideálně v březnu.</p></div>
+      </details>
+      <details>
+        <summary>Je stroj po odeslání rezervace můj?</summary>
+        <div><p>Ještě ne. Odeslání formuláře je žádost o rezervaci. Do 24 hodin ověříme, že je stroj v termínu volný, a pošleme vám e-mailem smlouvu o zápůjčce se soupisem, výší kauce, platebními údaji a adresou vyzvednutí. Rezervace platí po jejím potvrzení.</p></div>
+      </details>
+      <details>
+        <summary>Jak stroj dostanu domů?</summary>
+        <div><p>Menší stroje odvezete v kombi nebo na přívěsném vozíku. K větším strojům půjčíme hliníkové nájezdy a upínací popruhy, s naložením v Podbořanech pomůžeme. Když potřebujete stroj dovézt, napište to do poznámky, domluvíme dopravu podle vzdálenosti.</p></div>
+      </details>
+      <details>
+        <summary>Umíte závlahu i bez chytré domácnosti?</summary>
+        <div><p>Ano. Většinu závlah stavíme samostatně s řídicí jednotkou Hunter Hydrawise, která se ovládá z mobilu a sama reaguje na počasí. Loxone je nadstavba pro ty, kdo chtějí propojit závlahu s osvětlením, robotickou sekačkou nebo domem. Přejít na Loxone jde i později.</p></div>
+      </details>
+      <details>
+        <summary>Kam jezdíte?</summary>
+        <div><p>Podbořany, Žatec, Louny, Chomutov, Kadaň, Most, Klášterec nad Ohří a okolí. Showroom a půjčovna jsou v Podbořanech. Vzdálenější zakázky probereme individuálně, u větších ploch jezdíme i dál.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== KONTAKT ===================== -->
+<section class="section" id="kontakt">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Kontakt</h2>
+      <p class="lead">Showroom a půjčovna v Podbořanech u Žatce, návštěva po předchozí domluvě. Za trávníky a závlahou jezdíme po celém okolí.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-row"><span class="k">Telefon</span><span class="v"><a href="tel:+420608845555">+420 608 845 555</a><button class="copy" type="button" data-copy="+420 608 845 555">Kopírovat</button></span><span class="v" style="font-size:1.1rem"><a href="tel:+420608343235">+420 608 343 235</a><button class="copy" type="button" data-copy="+420 608 343 235">Kopírovat</button></span></div>
+        <div class="contact-row"><span class="k">E-mail</span><span class="v" style="font-size:1.15rem"><a href="mailto:technik@scobaplus.cz">technik@scobaplus.cz</a><button class="copy" type="button" data-copy="technik@scobaplus.cz">Kopírovat</button></span></div>
+        <div class="contact-row"><span class="k">Showroom a půjčovna</span><span class="v" style="font-size:1.15rem">Podbořany, 441 01</span><p>Po předchozí domluvě, zápůjčky se vydávají večer od 19:00. <a href="https://www.google.com/maps/search/?api=1&query=Podbo%C5%99any+44101" target="_blank" rel="noopener">Otevřít v mapách</a></p></div>
+        <div class="contact-row"><span class="k">Provozovatel</span><span class="v" style="font-size:1.15rem">Scoba plus s.r.o.</span><p>Trávníkový servis BestGrass, půjčovna strojů, chytré systémy Loxone, kamery a alarmy Hikvision. <a href="https://www.facebook.com/profile.php?id=100086114055921" target="_blank" rel="noopener">Facebook</a></p></div>
+        <div class="contact-row" style="border-bottom:0"><span class="k">Kde působíme</span><div class="towns"><span>Podbořany</span><span>Žatec</span><span>Louny</span><span>Chomutov</span><span>Kadaň</span><span>Most</span><span>Klášterec nad Ohří</span><span>a okolí</span></div></div>
+      </div>
+      <div class="contact-form">
+        <div class="form-head">
+          <h3 style="font-size:1.4rem">Napište nám</h3>
+          <p>Na cokoli dalšího: chytrý dům, kamery, sekání větších ploch, doprava materiálu.</p>
+        </div>
+        <form class="form" data-form="kontakt" name="kontakt" method="POST" action="dekujeme.html" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+        <input type="hidden" name="form-name" value="kontakt">
+        <p class="hp" aria-hidden="true"><label>Nevyplňujte toto pole: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+          <div class="field"><label for="k-name">Jméno a příjmení</label><input id="k-name" name="jmeno" type="text" autocomplete="name" required></div>
+          <div class="field"><label for="k-phone">Telefon</label><input id="k-phone" name="telefon" type="tel" autocomplete="tel" required></div>
+          <div class="field"><label for="k-mail">E-mail</label><input id="k-mail" name="email" type="email" autocomplete="email" required></div>
+          <div class="field"><label for="k-topic">Téma</label>
+            <select id="k-topic" name="tema"><option value="chytra-zahrada">Chytrá zahrada a dům (Loxone)</option><option value="kamery">Kamery a zabezpečení</option><option value="sekani">Sekání a údržba větších ploch</option><option value="doprava">Doprava písku a zeminy</option><option value="jine">Něco jiného</option></select></div>
+          <div class="field full"><label for="k-msg">Zpráva</label><textarea id="k-msg" name="zprava" required></textarea></div>
+          <label class="check full"><input type="checkbox" name="gdpr" required><span>Souhlasím se zpracováním údajů pro vyřízení dotazu. <a href="soukromi.html" target="_blank" rel="noopener">Ochrana osobních údajů</a></span></label>
+          <div class="form-msg err" hidden></div>
+          <div class="form-foot"><button class="btn btn-primary" type="submit">Odeslat zprávu</button></div>
+        </form>
+        <div class="success" hidden>
+          <h3>Zpráva odeslána</h3>
+          <p>Děkujeme, ozveme se do 24 hodin.</p>
+          <button class="btn btn-secondary" type="button" data-again>Napsat další zprávu</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="#top"><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" style="width:24px;height:24px"><rect x="2" y="2" width="28" height="28" rx="6" fill="var(--turf)"/><path d="M9 24c1-6 3-10 7-14 0 5-1 9-3 14M16 24c0-5 2-9 6-12-1 5-2 9-4 12M12 24c.5-3 2-6 4-8" stroke="var(--turf-fg)" stroke-width="2.2" stroke-linecap="round" fill="none"/></svg><span>BestGrass</span></a>
+        <p>Trávníkový servis, automatické závlahy a půjčovna strojů. Zahrady, hřiště a chytré systémy Loxone v okolí Podbořan.</p>
+      </div>
+      <div>
+        <h4>Služby</h4>
+        <ul>
+          <li><a href="#travnik">Renovace trávníku</a></li>
+          <li><a href="#zavlaha">Automatická závlaha</a></li>
+          <li><a href="#pujcovna">Půjčovna strojů</a></li>
+          <li><a href="#chytra-zahrada">Chytrá zahrada a dům</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Informace</h4>
+        <ul>
+          <li><a href="#cenik">Ceník služeb</a></li>
+          <li><a href="#rezervace">Rezervace zápůjčky</a></li>
+          <li><a href="#otazky">Časté otázky</a></li>
+          <li><a href="#reference">Reference a realizace</a></li>
+          <li><a href="soukromi.html">Ochrana osobních údajů</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="tel:+420608845555">+420 608 845 555</a></li>
+          <li><a href="tel:+420608343235">+420 608 343 235</a></li>
+          <li><a href="mailto:technik@scobaplus.cz">technik@scobaplus.cz</a></li>
+          <li>Showroom a půjčovna Podbořany, po domluvě</li>
+          <li><a href="https://www.facebook.com/profile.php?id=100086114055921" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Scoba plus s.r.o., Podbořany</span>
+      <span>Všechny ceny včetně DPH. Platba převodem nebo QR kódem.</span>
+      <span><a href="#top">Zpět nahoru</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // Režim formulářů: "netlify" = odesílá do Netlify Forms (web musí běžet na Netlify),
+  // "endpoint" = POST na FORM_ENDPOINT (Formspree, vlastní skript), "demo" = jen ukáže potvrzení.
+  var FORM_MODE = "netlify";
+  var FORM_ENDPOINT = "";
+  var RENTAL = {"aerifikator-camon": {"name": "Aerifikátor Camon", "day": 1799, "wk": 3199, "dep": 10000}, "topdresser-s75": {"name": "Pískovač Topdresser S75", "day": 800, "wk": 1400, "dep": 5000}, "vertikutator": {"name": "Vertikutátor", "day": 1090, "wk": null, "dep": null}, "sberac-spuntu": {"name": "Sběrač špuntů po aerifikaci 45 cm", "day": 590, "wk": 790, "dep": 5000}, "vycesavac-hecht": {"name": "Vyčesávač špuntů Hecht", "day": 500, "wk": 800, "dep": 5000}, "aerifikacni-vidle": {"name": "Aerifikační vidle", "day": 250, "wk": 400, "dep": null}, "smykovaci-sit": {"name": "Smykovací síť", "day": 450, "wk": 600, "dep": 5000}, "substratovy-valec": {"name": "Substrátový válec", "day": 350, "wk": 500, "dep": 5000}, "rozmetadlo-accu": {"name": "Rozmetadlo ICL AccuPro", "day": 349, "wk": 599, "dep": 2000}, "rozmetadlo-husqvarna": {"name": "Rozmetadlo tažné Husqvarna", "day": 750, "wk": null, "dep": null}, "slupovacka-drnu": {"name": "Slupovačka drnu", "day": 1100, "wk": 2000, "dep": 10000}, "minibagr-kubota": {"name": "Minibagr Kubota K008-3", "day": 1700, "wk": null, "dep": 25000}, "hrabe-srovnavacky": {"name": "Srovnávací hrábě", "day": 499, "wk": 800, "dep": 800}, "brana-90": {"name": "Nivelační brána 90 cm", "day": 90, "wk": 150, "dep": null}, "brana-115": {"name": "Nivelační brána 115 cm", "day": 90, "wk": 150, "dep": null}, "rucni-valec": {"name": "Ruční válec", "day": 250, "wk": null, "dep": null}, "tazeny-valec": {"name": "Tažený válec za traktůrek", "day": 300, "wk": null, "dep": null}, "najezdy": {"name": "Hliníkové nájezdy", "day": 99, "wk": 99, "dep": null}, "popruhy": {"name": "Upínací popruhy s ráčnou", "day": 25, "wk": 40, "dep": null}, "orezavac-gude": {"name": "Ořezávač hran Güde", "day": 500, "wk": 800, "dep": 5000}, "orezavac-gude-velky": {"name": "Ořezávač hran Güde velký", "day": 750, "wk": null, "dep": null}, "aku-postrikovac": {"name": "Aku postřikovač", "day": 200, "wk": 350, "dep": null}, "vytrhavac-plevele": {"name": "Vytrhávač plevele Fiskars", "day": 200, "wk": null, "dep": null}, "gril": {"name": "Nerezový gril na dřevo", "day": 750, "wk": 1300, "dep": null}};
+
+  // --- mobile nav
+  var toggle = document.getElementById('navToggle'), nav = document.getElementById('nav');
+  toggle.addEventListener('click', function(){
+    var open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggle.textContent = open ? 'Zavřít' : 'Menu';
+  });
+  nav.addEventListener('click', function(e){ if (e.target.tagName === 'A') { nav.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); toggle.textContent='Menu'; } });
+
+  // --- rental filters
+  var filters = document.querySelectorAll('.filters button');
+  filters.forEach(function(b){
+    b.addEventListener('click', function(){
+      filters.forEach(function(x){ x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+      var f = b.getAttribute('data-filter');
+      document.querySelectorAll('#rcGrid .rc').forEach(function(c){ c.hidden = !(f === 'all' || c.getAttribute('data-group') === f); });
+    });
+  });
+
+  // --- rental picker: more machines in one reservation
+  var sel = document.getElementById('r-stroj'), pickedBox = document.getElementById('picked'), hiddenIds = document.getElementById('r-stroje');
+  var picked = [];
+  function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  function renderPicked(){
+    pickedBox.innerHTML = picked.map(function(id){
+      return '<span class="pick">' + esc(RENTAL[id].name) + '<button type="button" data-unpick="' + id + '" aria-label="Odebrat ' + esc(RENTAL[id].name) + '">×</button></span>';
+    }).join('');
+    hiddenIds.value = picked.join(',');
+    document.querySelectorAll('[data-rent]').forEach(function(b){
+      var on = picked.indexOf(b.getAttribute('data-rent')) !== -1;
+      b.classList.toggle('added', on); b.textContent = on ? 'Přidáno, zrušit' : 'Rezervovat';
+    });
+    estimate();
+  }
+  function pick(id){ if (RENTAL[id] && picked.indexOf(id) === -1) { picked.push(id); } renderPicked(); }
+  function unpick(id){ picked = picked.filter(function(x){ return x !== id; }); renderPicked(); }
+  pickedBox.addEventListener('click', function(e){ var b = e.target.closest('[data-unpick]'); if (b) unpick(b.getAttribute('data-unpick')); });
+  sel.addEventListener('change', function(){ if (sel.value) { pick(sel.value); sel.value = ''; } });
+  document.querySelectorAll('[data-rent]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var id = b.getAttribute('data-rent');
+      if (picked.indexOf(id) !== -1) { unpick(id); return; }
+      pick(id);
+      document.getElementById('rezervace').scrollIntoView({behavior:'smooth', block:'start'});
+      setTimeout(function(){ document.getElementById('r-od').focus({preventScroll:true}); }, 500);
+    });
+  });
+
+  // --- rental estimate (sum over picked machines)
+  var od = document.getElementById('r-od'), doI = document.getElementById('r-do'), est = document.getElementById('estimate');
+  function kc(n){ return n.toLocaleString('cs-CZ') + ' Kč'; }
+  function estimate(){
+    if (!picked.length || !od.value) { est.hidden = true; return; }
+    var a = new Date(od.value + 'T12:00:00'), b = doI.value ? new Date(doI.value + 'T12:00:00') : a;
+    if (b < a) { b = a; doI.value = od.value; }
+    var days = Math.round((b - a) / 86400000) + 1;
+    var weekend = (a.getDay() === 5 && days <= 4) || (a.getDay() === 6 && days <= 3);
+    var total = 0, dep = 0, rows = [];
+    picked.forEach(function(id){
+      var m = RENTAL[id], p, how;
+      if (weekend && m.wk) { p = m.wk; how = 'víkend'; }
+      else { p = m.day * days; how = days + ' × ' + kc(m.day); }
+      total += p; dep += (m.dep || 0);
+      rows.push('<span><i>' + esc(m.name) + ' (' + how + ')</i><b>' + kc(p) + '</b></span>');
+    });
+    est.innerHTML = '<div class="est-rows">' + rows.join('') + '</div><span>Orientační cena celkem</span><strong>' + kc(total) + '</strong><span>'
+      + (weekend ? 'Víkendová sazba od pátečního večera do pondělního rána. ' : days + (days === 1 ? ' den. ' : days < 5 ? ' dny. ' : ' dní. '))
+      + (dep ? 'K tomu vratná kauce ' + kc(dep) + '. ' : '') + 'Vyzvednutí den předem od 19:00.</span>';
+    est.hidden = false;
+  }
+  [od, doI].forEach(function(el){ el.addEventListener('change', estimate); el.addEventListener('input', estimate); });
+  var today = new Date(); today.setDate(today.getDate() + 1);
+  od.min = today.toISOString().slice(0,10); doI.min = od.min;
+  od.addEventListener('change', function(){ doI.min = od.value || od.min; });
+
+  // --- photo previews
+  document.querySelectorAll('[data-photos]').forEach(function(inp){
+    inp.addEventListener('change', function(){
+      var box = inp.parentElement.querySelector('.thumbs'); box.innerHTML = '';
+      var files = Array.prototype.slice.call(inp.files, 0, 4);
+      if (inp.files.length > 4) { var w = document.createElement('p'); w.className = 'file-hint'; w.textContent = 'Použijeme první 4 soubory.'; box.appendChild(w); }
+      files.forEach(function(f){
+        if (!f.type.match(/^image\//)) { var t = document.createElement('span'); t.className='file-hint'; t.textContent = f.name; box.appendChild(t); return; }
+        var r = new FileReader();
+        r.onload = function(){ var im = new Image(); im.src = r.result; im.alt = f.name; box.appendChild(im); };
+        r.readAsDataURL(f);
+      });
+    });
+  });
+
+  // --- form data: text fields + up to 4 photos, images shrunk to max 1600 px before upload
+  function shrinkImage(file){
+    return new Promise(function(resolve){
+      if (!file.type.match(/^image\//) || file.size < 400000) return resolve(file);
+      var img = new Image(), url = URL.createObjectURL(file);
+      img.onload = function(){
+        var MAX = 1600, s = Math.min(1, MAX / Math.max(img.width, img.height));
+        var c = document.createElement('canvas'); c.width = Math.round(img.width * s); c.height = Math.round(img.height * s);
+        c.getContext('2d').drawImage(img, 0, 0, c.width, c.height);
+        c.toBlob(function(b){ URL.revokeObjectURL(url); resolve(b ? new File([b], file.name.replace(/\.[^.]+$/, '') + '.jpg', {type:'image/jpeg'}) : file); }, 'image/jpeg', 0.8);
+      };
+      img.onerror = function(){ URL.revokeObjectURL(url); resolve(file); };
+      img.src = url;
+    });
+  }
+  function buildFormData(form){
+    var fd = new FormData();
+    Array.prototype.forEach.call(form.elements, function(el){
+      if (!el.name || el.disabled || el.type === 'file') return;
+      if ((el.type === 'checkbox' || el.type === 'radio') && !el.checked) return;
+      fd.append(el.name, el.value);
+    });
+    fd.set('formular', form.getAttribute('data-form'));
+    var picker = form.querySelector('[data-photos]');
+    var files = picker ? Array.prototype.slice.call(picker.files, 0, 4) : [];
+    return Promise.all(files.map(shrinkImage)).then(function(out){
+      out.forEach(function(f, i){ fd.append('fotka' + (i + 1), f, f.name); });
+      return fd;
+    });
+  }
+
+  // --- forms
+  document.querySelectorAll('form[data-form]').forEach(function(form){
+    var block = form.parentElement, ok = block.querySelector('.success'), msg = form.querySelector('.form-msg');
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      msg.hidden = true;
+      if (form.getAttribute('data-form') === 'rezervace' && !picked.length) {
+        msg.textContent = 'Vyberte alespoň jeden stroj: tlačítkem Rezervovat u stroje nebo z nabídky Přidat stroj.';
+        msg.hidden = false; sel.focus();
+        return;
+      }
+      if (!form.checkValidity()) {
+        var bad = form.querySelector(':invalid');
+        msg.textContent = 'Doplňte prosím označená pole: ' + (bad && bad.labels && bad.labels[0] ? bad.labels[0].textContent.replace(/\(.*\)/,'').trim() : 'povinné údaje') + '.';
+        msg.hidden = false; if (bad) bad.focus();
+        return;
+      }
+      var btn = form.querySelector('[type=submit]'), label = btn.textContent;
+      btn.disabled = true; btn.textContent = 'Odesílám…';
+      var done = function(){ form.hidden = true; ok.hidden = false; btn.disabled = false; btn.textContent = label; ok.scrollIntoView({behavior:'smooth', block:'center'}); };
+      var fail = function(){ btn.disabled = false; btn.textContent = label; msg.textContent = 'Odeslání se nepovedlo. Zkuste to znovu, nebo zavolejte +420 608 845 555.'; msg.hidden = false; };
+      buildFormData(form).then(function(fd){
+        if (form.getAttribute('data-form') === 'rezervace') fd.set('stroje', picked.map(function(id){ return RENTAL[id].name; }).join(', '));
+        if (FORM_MODE === 'netlify') {
+          fetch(form.getAttribute('action') || '/', {method:'POST', body: fd}).then(function(r){ r.ok ? done() : fail(); }).catch(fail);
+        } else if (FORM_MODE === 'endpoint' && FORM_ENDPOINT) {
+          fetch(FORM_ENDPOINT, {method:'POST', body: fd, headers:{'Accept':'application/json'}}).then(function(r){ r.ok ? done() : fail(); }).catch(fail);
+        } else {
+          setTimeout(done, 600);
+        }
+      }).catch(fail);
+    });
+    block.querySelectorAll('[data-again]').forEach(function(b){ b.addEventListener('click', function(){ form.reset(); form.querySelectorAll('.thumbs').forEach(function(t){ t.innerHTML=''; }); if (form.getAttribute('data-form')==='rezervace') { picked = []; renderPicked(); est.hidden = true; } ok.hidden = true; form.hidden = false; form.querySelector('input,select').focus(); }); });
+  });
+
+  // --- topic preselect from the smart-garden CTA
+  document.querySelectorAll('[data-topic]').forEach(function(a){ a.addEventListener('click', function(){ var s = document.getElementById('k-topic'); if (s) s.value = a.getAttribute('data-topic'); }); });
+
+  // --- copy buttons
+  document.querySelectorAll('[data-copy]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var v = b.getAttribute('data-copy'), orig = b.textContent;
+      var show = function(t){ b.textContent = t; setTimeout(function(){ b.textContent = orig; }, 1600); };
+      if (navigator.clipboard && navigator.clipboard.writeText) { navigator.clipboard.writeText(v).then(function(){ show('Zkopírováno'); }, function(){ show(v); }); }
+      else { show(v); }
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
